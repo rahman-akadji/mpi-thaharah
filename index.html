@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#086a4d">
+<meta name="description" content="Media Pembelajaran Interaktif Fiqih Kelas I Fase A: Thaharah, jenis najis dan cara menyucikannya. Dapat digunakan secara offline.">
+<title>Thaharah | MPI Fiqih Kelas I – MIM Unggulan Kota Gorontalo</title>
+<style>
+:root{--forest:#075940;--emerald:#0d8060;--mint:#eaf9f0;--light:#f5fbf8;--gold:#e9b54e;--gold2:#fff0c1;--ink:#17392f;--muted:#58766a;--red:#b84336;--line:#dcebe4;--white:#fff;--shadow:0 22px 55px rgba(7,73,52,.12);--round:23px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;background:radial-gradient(circle at 3% 0%,#e0f9e9,transparent 33%),radial-gradient(circle at 95% 25%,#fff1cc,transparent 26%),var(--light);color:var(--ink);min-height:100vh}button,input{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.52}a{color:var(--emerald)}:focus-visible{outline:3px solid var(--gold);outline-offset:3px}img{max-width:100%}.hidden{display:none!important}#app{min-height:100vh}main{width:min(1160px,calc(100% - 34px));margin:auto;padding:24px 0 65px}.page{animation:reveal .42s ease both}@keyframes reveal{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:none}}
+h1,h2,h3,h4,p{margin-top:0}h1{font-size:clamp(2rem,5vw,4.2rem);letter-spacing:-.045em;line-height:1.14}h2{font-size:clamp(1.55rem,3vw,2.35rem);line-height:1.2;letter-spacing:-.025em}h3{font-size:1.15rem}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:800;color:var(--emerald)}.small{font-size:.88rem}.muted{color:var(--muted)}.hero-gradient{background:linear-gradient(133deg,#06563f,#108364 62%,#25aa81);color:#fff}.panel{border:1px solid var(--line);border-radius:var(--round);background:white;box-shadow:var(--shadow)}.pad{padding:clamp(20px,3.5vw,38px)}.btn{border:0;border-radius:15px;background:var(--emerald);color:#fff;padding:13px 20px;min-height:46px;font-weight:790;display:inline-flex;align-items:center;justify-content:center;gap:8px;text-align:center;transition:transform .16s,background .16s,box-shadow .16s;line-height:1.3;text-decoration:none}.btn:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 7px 20px #08644b32}.btn:active:not(:disabled){transform:translateY(1px)}.btn.secondary{background:#e9f6ef;color:#075c43}.btn.outline{background:#fff;color:var(--forest);border:1.5px solid #bad8ca}.btn.gold{background:linear-gradient(130deg,#ffe49a,#eabf60);color:#3e3010}.btn.danger{background:#f9e7e4;color:#95362b}.btn.full{width:100%}.btn.small{padding:8px 12px;min-height:36px;border-radius:12px;font-size:.85rem}.button-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:22px}.pill{display:inline-flex;align-items:center;gap:6px;background:#e8f5ed;color:#0c6548;border-radius:999px;padding:7px 12px;font-size:.81rem;font-weight:800}.pill.gold{background:#fff0ca;color:#795712}.pill.white{color:#ebfff4;background:#ffffff28;border:1px solid #ffffff49}.pill.locked{background:#f0f2f1;color:#677b71}.stack{display:grid;gap:18px}.two-col{display:grid;grid-template-columns:1.16fr .84fr;gap:25px;align-items:start}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.rule{height:1px;background:var(--line);margin:21px 0}.nav{background:#ffffffd9;border-bottom:1px solid var(--line);backdrop-filter:blur(14px);position:sticky;top:0;z-index:20}.nav-inner{max-width:1180px;margin:auto;padding:10px 18px;display:flex;align-items:center;gap:12px;justify-content:space-between;flex-wrap:wrap}.nav-brand{font-size:.99rem;font-weight:900;color:var(--forest);display:flex;align-items:center;gap:8px}.nav-actions{display:flex;gap:8px;align-items:center}.avatar-mini{height:34px;width:34px;border-radius:12px;background:#d7f2e5;display:grid;place-items:center;font-size:1rem}
+body.has-media-dock{padding-bottom:88px}
+.media-dock{position:fixed;z-index:25;bottom:0;left:0;right:0;display:flex;align-items:center;gap:13px;padding:10px max(14px,env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left));background:linear-gradient(112deg,#064632,#08765a);color:#f8fffb;box-shadow:0 -10px 32px #093e2d30;border-top:2px solid #d8b75b;min-height:74px}
+.media-dock[hidden]{display:none!important}
+.dock-info{display:flex;align-items:center;min-width:0;flex:1;gap:12px}
+.dock-indicator{flex-shrink:0;color:#ffe29b;font-weight:850;letter-spacing:.06em;font-size:.72rem;display:flex;align-items:center;gap:7px;white-space:nowrap}
+.dock-pulse{width:8px;height:8px;border-radius:50%;background:#f0d078;box-shadow:0 0 0 4px #f0d07824;animation:dockPulse 2.8s ease-in-out infinite}
+@keyframes dockPulse{50%{box-shadow:0 0 0 7px #f0d07808}}
+.ticker-viewport{overflow:hidden;white-space:nowrap;min-width:0;flex:1;mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent)}
+.ticker-track{display:flex;align-items:center;width:max-content;animation:infoTickerTravel 46s linear infinite;will-change:transform}
+.ticker-item{display:block;flex:none;padding-right:54px;font-size:.87rem;line-height:1.5;font-weight:650;color:#eafff3}
+.ticker-item b{color:#ffe297}
+@keyframes infoTickerTravel{to{transform:translateX(-50%)}}
+@media(hover:hover){.media-dock:hover .ticker-track{animation-play-state:paused}}.media-dock.ticker-paused .ticker-track{animation-play-state:paused}
+.dock-actions{display:flex;gap:6px;align-items:center;flex:none}
+.dock-btn{border:1px solid #ffffff70;background:#ffffff18;color:#fff;border-radius:12px;padding:9px 10px;font-weight:780;min-height:40px;font-size:.76rem;white-space:nowrap}
+.dock-btn[aria-pressed=true]{background:#ffdfa0;color:#2e422f;border-color:#fce3b0}
+.dock-btn:focus-visible{outline:3px solid #fff0a0}
+@media(max-width:900px){.media-dock{flex-wrap:wrap;gap:6px;padding:7px 10px calc(7px + env(safe-area-inset-bottom));justify-content:space-between}.dock-info{flex-basis:100%;gap:9px}.dock-indicator{font-size:.63rem}.ticker-item{font-size:.76rem}.dock-actions{margin-left:auto;gap:5px}.dock-btn{min-height:33px;padding:5px 9px;font-size:.71rem}body.has-media-dock{padding-bottom:105px}}
+@media(max-width:540px){.dock-indicator{max-width:93px;white-space:normal;line-height:1.12}.media-dock{min-height:85px}.dock-info{min-width:0}.ticker-item{font-size:.72rem}.dock-btn{font-size:.67rem}}
+@media(prefers-reduced-motion:reduce){.ticker-track{animation:none!important}.ticker-viewport{overflow-x:auto;mask-image:none}.dock-pulse{animation:none}}
+.splash{min-height:100vh;display:grid;place-items:center;padding:20px;background:linear-gradient(155deg,#075c41,#0a8761)}.splash-card{text-align:center;color:white}.splash-droplet{font-size:6rem;display:block;animation:bob 1.5s ease-in-out infinite}@keyframes bob{50%{transform:translateY(-12px)}}.splash-title{font-size:clamp(2rem,6vw,3.5rem);font-weight:900}.splash-line{width:200px;height:5px;border-radius:30px;background:#ffffff42;margin:24px auto;overflow:hidden}.splash-line:after{content:"";display:block;height:100%;background:#f8d778;animation:load 1.65s linear both}@keyframes load{to{width:100%}from{width:0}}
+.cover-wrap{min-height:100vh;display:grid;place-items:center;padding:20px 0}.cover{width:min(1180px,calc(100% - 32px));border-radius:32px;overflow:hidden;display:grid;grid-template-columns:1fr 1.02fr;position:relative;box-shadow:0 35px 90px #054b3538}.cover-left{padding:clamp(27px,5vw,66px);display:flex;flex-direction:column;justify-content:center;gap:12px}.cover .description{color:#dcfff0;font-size:clamp(1rem,1.5vw,1.15rem);max-width:460px}.cover-title strong{color:#ffdf86}.cover-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}.cover-actions .start{grid-column:1/-1;font-size:1.13rem;padding:16px}.cover-visual{display:grid;place-items:center;min-height:485px;position:relative;background:radial-gradient(circle at 50% 50%,#ffffff2d,transparent 60%)}.cover-visual:before{content:"";position:absolute;border:2px dashed #ffffff55;border-radius:50%;inset:7%;animation:spin 38s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.hero-svg{width:min(100%,540px);height:auto;filter:drop-shadow(0 22px 36px #03493580)}.water-drop{animation:water 2.5s ease-in-out infinite}.water-drop:nth-of-type(2){animation-delay:.8s}@keyframes water{50%{transform:translateY(-12px);opacity:.75}}.hero-svg .wave{animation:wave 4s ease-in-out infinite;transform-origin:50% 90%}@keyframes wave{50%{transform:rotate(2deg)}}
+.modal-backdrop{position:fixed;inset:0;background:#062f2799;z-index:100;display:grid;place-items:center;padding:17px;backdrop-filter:blur(8px);animation:reveal .2s}.modal{width:min(560px,100%);max-height:min(88vh,900px);overflow:auto;padding:clamp(22px,4vw,35px);border-radius:26px;background:linear-gradient(165deg,#ffffff,#f4fff9);box-shadow:0 35px 100px #061f1a83}.profile-photo{width:110px;height:110px;border-radius:50%;border:5px solid #e8bf66;object-fit:cover;display:block;margin:auto auto 16px}.profile-fallback{display:none;width:110px;height:110px;border-radius:50%;margin:auto auto 16px;place-items:center;font-size:2rem;font-weight:900;background:#daf2e4;color:var(--forest);border:5px solid #e8bf66}.modal h2{text-align:center}.modal .center{text-align:center}.modal .btn{margin-top:7px}.quote{background:linear-gradient(130deg,#eefaf2,#fcf7e9);border-left:4px solid var(--gold);padding:17px;border-radius:14px}.arabic{font-family:Amiri,'Noto Naskh Arabic','Traditional Arabic',serif;font-size:clamp(1.65rem,3.1vw,2.2rem);line-height:2;text-align:right;direction:rtl;color:#08543c;font-weight:550}.verse-ref{font-size:.85rem;font-weight:850;color:#0a7656}.verse-translation{line-height:1.65;margin:4px 0}
+.form-panel{width:min(680px,100%);margin:34px auto}.field{display:grid;gap:8px;margin:15px 0}.field label{font-weight:780}.field input{width:100%;border:2px solid #d8e8df;border-radius:13px;padding:15px 14px;background:#fcfffd;color:#17392f;outline:none}.field input:focus{border-color:#0d8060}.error{color:var(--red);font-weight:700;font-size:.85rem;min-height:20px}.welcome{background:linear-gradient(125deg,#dbf4e6,#fff5d9);padding:21px;border-radius:20px}.guide-visual{font-size:4rem;width:96px;height:96px;background:var(--mint);border-radius:24px;display:grid;place-items:center;margin-bottom:16px}.dots{display:flex;gap:7px;justify-content:center;margin:22px}.dot{width:8px;height:8px;border-radius:12px;background:#cadfd3}.dot.active{width:28px;background:var(--emerald)}
+.menu-head{padding:28px;border-radius:24px;background:linear-gradient(125deg,#0a6348,#118469);color:white;display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;margin-bottom:26px}.menu-head .muted{color:#d6f9ea}.progress{height:10px;border-radius:50px;background:#e5f2ea;overflow:hidden}.progress div{height:100%;border-radius:50px;background:linear-gradient(90deg,#16a06c,#f0c96d);transition:width .3s}.card-button{background:white;border:1px solid var(--line);border-radius:23px;box-shadow:0 14px 38px #043d2d14;padding:25px;text-align:left;color:var(--ink);min-height:267px;display:flex;flex-direction:column;gap:12px;align-items:flex-start;width:100%;transition:transform .18s,box-shadow .18s}.card-button:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.card-button .emblem{height:65px;width:65px;border-radius:19px;background:var(--mint);display:grid;place-items:center;font-size:2.15rem}.card-button.is-locked{background:#f8f9f8}.card-button.is-locked:hover{transform:none}.card-button p{line-height:1.57;color:var(--muted);font-size:.93rem;margin-bottom:0}.card-button .card-bottom{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:10px;width:100%}.menu-notice{margin-top:22px;padding:19px;border-radius:18px;background:#fff8e6;border:1px solid #f6e0a4}
+.crumb{display:flex;gap:8px;align-items:center;flex-wrap:wrap;color:var(--muted);font-size:.86rem;font-weight:750;margin-bottom:18px}.slide-head{display:flex;align-items:flex-start;gap:18px;justify-content:space-between;flex-wrap:wrap;margin-bottom:17px}.slide-head .title-area{flex:1;min-width:240px}.slide-head h2{margin:7px 0 5px}.lesson-layout{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(270px,.85fr);gap:18px}.lesson-body p{line-height:1.88;font-size:1.015rem}.lesson-side{display:grid;gap:15px;align-content:start}.local-box{border-radius:19px;background:#edf8f2;padding:20px;border:1px solid #d4e9dc}.love-box{background:#fff7e6;border:1px solid #f3e0aa;border-radius:19px;padding:20px}.lesson-activity{margin-top:18px;background:#fff;border:2px solid #d9eee2;padding:clamp(18px,3vw,26px);border-radius:21px}.option-list{display:grid;gap:11px;margin-top:13px}.option{padding:15px 15px;text-align:left;border:2px solid #dbe9e0;border-radius:14px;background:#fff;color:#163a2e;display:flex;align-items:center;gap:10px;font-weight:670;line-height:1.44;min-height:52px;transition:border-color .15s,background .15s}.option:hover:not(:disabled){border-color:#79bda0;background:#f4fff8}.option.selected{border-color:var(--emerald);background:#e1f4e9}.option-letter{background:#e7f2eb;color:#0d6c4f;display:grid;place-items:center;border-radius:9px;min-width:32px;height:32px;font-size:.88rem;font-weight:850}.feedback{margin-top:16px;border-radius:14px;padding:15px 18px;line-height:1.55}.feedback.success{background:#e3f6e9;border:1px solid #9cdbb4;color:#12613c}.feedback.fail{background:#fff0e9;border:1px solid #f1b8aa;color:#8c3329}.feedback.info{background:#fff8e7;border:1px solid #ecd69c;color:#71591d}.stimulus{font-size:1rem;line-height:1.85;background:#f6fbf7;border-left:4px solid var(--emerald);border-radius:12px;padding:18px 22px;white-space:pre-line}.prompt-box{margin-top:22px}.prompt-box h3{font-size:1.16rem;line-height:1.55}.question-count{font-size:.79rem;color:#6d7d73;font-weight:750}.challenge-section{margin-top:23px}.match-cols{display:grid;grid-template-columns:1fr 1fr;gap:13px}.match-col{display:grid;gap:11px;align-content:start}.match-col h4{margin-bottom:4px}.tile{padding:14px;border:2px solid #dce9e2;background:#fff;border-radius:13px;font-weight:700;min-height:62px;display:flex;align-items:center;gap:8px;text-align:left;overflow-wrap:anywhere;line-height:1.45;transition:background .2s,border .2s}.tile.selected{background:#dff5e7;border-color:#0e8b63}.tile.assigned{background:#f1fbf4;border-color:#9bd7b1}.tile .num{color:#197656}.tile.drop{border-style:dashed}.tile:hover{background:#f5fff9}.order-list{display:grid;gap:10px}.order-row{display:flex;align-items:center;gap:9px}.order-btn{flex:1}.order-n{font-weight:900;color:#127457;min-width:26px}.order-hint{color:var(--muted);font-size:.85rem}.bucket-group{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.bucket{border:2px dashed #96c7aa;border-radius:15px;background:#f3fbf6;min-height:127px;padding:13px;display:flex;flex-direction:column;gap:8px;overflow-wrap:anywhere}.bucket b{color:#11674c}.chip-bank{display:flex;flex-wrap:wrap;gap:10px;margin:13px 0}.chip{border:2px solid #c9e1d1;background:#fff;padding:11px;border-radius:12px;max-width:100%;overflow-wrap:anywhere;font-weight:700;color:#195140}.chip.selected{background:#ffefbe;border-color:#e6af41}.chip[draggable=true]{cursor:grab}.assigned-chip{font-size:.83rem;font-weight:750;border-radius:9px;background:white;padding:8px;border:1px solid #deeee3;overflow-wrap:anywhere;text-align:left;color:#154b37}.level-badge{background:#e8f2ea;color:#0d694b;font-size:.78rem;padding:7px 11px;border-radius:999px;font-weight:850}.level-badge.level3{background:#fff0c5;color:#765006}.metric-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:20px 0}.metric{background:#eef8f0;border-radius:18px;padding:19px;border:1px solid #d9ece0}.metric .val{font-size:clamp(1.55rem,3vw,2.1rem);font-weight:900;color:#0e7052}.metric .lab{font-size:.85rem;color:#5d7266}.report-title{color:#074f3b;font-weight:900;text-align:center}.report-top{border-bottom:3px solid #0b7053;padding-bottom:18px;display:flex;gap:14px;align-items:center}.report-logo{font-size:2rem;background:#e4f5e9;border-radius:14px;padding:15px}.report-table{border-collapse:collapse;width:100%;font-size:.91rem;margin:12px 0}.report-table th,.report-table td{border:1px solid #bed4c6;padding:10px;text-align:left;vertical-align:top}.report-table th{background:#e3f4e9}.report-table .right{text-align:right}.small-stat{background:#f2fbf5;border:1px solid #d7eadd;border-radius:12px;padding:13px}.summary-banner{background:linear-gradient(125deg,#0c6048,#118566);border-radius:20px;color:white;padding:23px}.summary-banner strong{font-size:1.8rem;color:#ffdf8a}.footer{margin:35px 0 0;text-align:center;color:#72877c;font-size:.77rem}.read-aloud{color:var(--muted);font-size:.86rem}.references li{margin-bottom:12px;line-height:1.6}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+@media(max-width:900px){.cover{grid-template-columns:1fr}.cover-visual{min-height:300px;order:-1}.cover-left{padding:25px 29px 34px}.cover-visual .hero-svg{max-width:400px}.lesson-layout,.two-col{grid-template-columns:1fr}.grid3{grid-template-columns:1fr}.card-button{min-height:180px}.cover h1{max-width:730px}.metric-cards{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:540px){main{width:calc(100% - 24px);padding-top:13px}.cover-wrap{padding:10px 0}.cover{border-radius:20px;width:calc(100% - 20px)}.cover-visual{min-height:225px}.cover-visual .hero-svg{max-width:290px}.cover-actions{grid-template-columns:1fr}.cover-actions .start{grid-column:auto}.panel.pad{padding:18px}.nav-inner{padding:8px 11px}.nav-brand .brand-long{display:none}.menu-head{padding:22px}.bucket-group{grid-template-columns:1fr}.bucket{min-height:80px}.match-cols{gap:7px}.match-col{gap:7px}.tile{padding:9px;font-size:.84rem;min-height:68px}.metric-cards{grid-template-columns:1fr}.report-table{font-size:.76rem}.report-table td,.report-table th{padding:7px}.report-top{align-items:start}.report-logo{display:none}.button-row .btn{flex:1 1 auto}.cover h1{font-size:clamp(2rem,10vw,3rem)}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.001ms!important;transition-duration:.001ms!important}}
+@media(max-width:540px){.cover-wrap{min-height:calc(100svh - 94px)}.cover-visual{min-height:145px;max-height:155px}.cover-visual .hero-svg{max-width:165px}.cover-left{padding:16px 20px 19px;gap:7px}.cover h1{font-size:clamp(1.85rem,8.8vw,2.4rem);line-height:1.08}.cover .description{font-size:.94rem;line-height:1.4;margin-bottom:0}.cover-actions{margin-top:8px;gap:7px}.cover-actions .btn{min-height:43px;padding:10px}.cover-actions .start{font-size:1rem;padding:12px}}
+@page{size:A4;margin:13mm}
+@media print{body{background:#fff!important;color:#000!important}body>*:not(#app){display:none!important}#mediaDock{display:none!important}.nav,.ticker,.no-print,.footer,.button-row,.report-actions{display:none!important}main{padding:0!important;width:100%!important;max-width:none!important}main.page>.panel:not(#printArea){display:none!important}.panel{border:0!important;box-shadow:none!important;border-radius:0!important}.pad{padding:0!important}#printArea{display:block!important;width:100%!important;max-width:none!important;box-shadow:none!important;border:0!important;padding:0!important;background:white!important}#printArea *{animation:none!important}#printArea .metric-cards{grid-template-columns:repeat(3,1fr)!important}#printArea .metric{break-inside:avoid}#printArea .report-table{break-inside:auto}#printArea tr{break-inside:avoid}#printArea h2,#printArea h3{break-after:avoid}}
+</style>
+</head>
+<body>
+<div id="app" aria-live="polite"></div>
+<div id="mediaDock" class="media-dock no-print" hidden aria-label="Informasi berjalan dan pengaturan audio">
+  <div class="dock-info">
+    <div class="dock-indicator"><span class="dock-pulse" aria-hidden="true"></span>INFO PEMBELAJARAN</div>
+    <div class="ticker-viewport" aria-label="Informasi Fiqih, pengembang dan tujuan pembelajaran">
+      <div class="ticker-track" aria-hidden="true">
+        <span class="ticker-item">✦ <b>MATA PELAJARAN:</b> Fiqih · Kelas I / Fase A · <b>TOPIK:</b> Thaharah — Jenis Najis dan Cara Menyucikannya · <b>PENGEMBANG:</b> Abdurahman M. Akadji, S.Pd., Gr. · MIM Unggulan Kota Gorontalo · <b>TUJUAN PEMBELAJARAN:</b> Mengenali pengertian najis secara sederhana dan menyebutkan 3 jenis najis: mukhaffafah (ringan), mutawassitah (sedang), serta mughallazah (berat) · <b>NILAI CINTA:</b> Cinta Allah dan Rasul, sesama, lingkungan, serta tanah air ✦</span>
+        <span class="ticker-item">✦ <b>MATA PELAJARAN:</b> Fiqih · Kelas I / Fase A · <b>TOPIK:</b> Thaharah — Jenis Najis dan Cara Menyucikannya · <b>PENGEMBANG:</b> Abdurahman M. Akadji, S.Pd., Gr. · MIM Unggulan Kota Gorontalo · <b>TUJUAN PEMBELAJARAN:</b> Mengenali pengertian najis secara sederhana dan menyebutkan 3 jenis najis: mukhaffafah (ringan), mutawassitah (sedang), serta mughallazah (berat) · <b>NILAI CINTA:</b> Cinta Allah dan Rasul, sesama, lingkungan, serta tanah air ✦</span>
+      </div>
+    </div>
+  </div>
+  <div class="dock-actions" role="group" aria-label="Pengaturan suara dan animasi teks">
+    <button type="button" class="dock-btn" data-dock="effects" aria-pressed="true" title="Aktifkan atau matikan efek suara tombol dan jawaban">🔔 Efek ON</button>
+    <button type="button" class="dock-btn" data-dock="music" aria-pressed="false" title="Aktifkan atau matikan musik latar yang dibuat di browser">🎵 Musik OFF</button>
+    <button type="button" class="dock-btn" data-dock="pause" aria-pressed="false" title="Jeda atau lanjutkan teks berjalan">⏸ Jeda teks</button>
+  </div>
+</div>
+<script>
+'use strict';
+const GAS_URL = "URL_GAS_ANDA_DISINI";
+
+const DB={
+  "verses": [
+    {
+      "ref": "QS. Al-Muddassir [74]: 4",
+      "arab": "وَثِيَابَكَ فَطَهِّرْۖ",
+      "trans": "Pakaianmu, bersihkanlah!",
+      "insight": "Allah mengingatkan kita agar memperhatikan kebersihan pakaian. Kita belajar membedakan noda biasa dan najis, lalu bersuci dengan cara yang benar.",
+      "url": "https://bimasislam.kemenag.go.id/al-quran/74"
+    },
+    {
+      "ref": "QS. Al-Baqarah [2]: 222 (penggalan)",
+      "arab": "اِنَّ اللّٰهَ يُحِبُّ التَّوَّابِيْنَ وَيُحِبُّ الْمُتَطَهِّرِيْنَ",
+      "trans": "Sesungguhnya Allah menyukai orang-orang yang bertobat dan menyukai orang-orang yang menyucikan diri.",
+      "insight": "Penggalan ayat ini menunjukkan pentingnya bersuci. Konteks lengkap ayat berkaitan dengan haid; kita mengambil nilai umum tentang cinta kebersihan.",
+      "url": "https://bimasislam.kemenag.go.id/al-quran/2"
+    }
+  ],
+  "lessons": [
+    {
+      "title": "Apa Itu Thaharah dan Najis?",
+      "icon": "💧",
+      "lead": "Bersih itu baik, suci itu penting untuk beribadah.",
+      "paragraphs": [
+        "Thaharah berarti bersuci. Dalam pelajaran Fiqih, thaharah mencakup membersihkan hadas dan najis sesuai tuntunan agama. Najis ialah sesuatu yang menurut hukum fikih harus dibersihkan dari tubuh, pakaian, atau tempat salat. Tidak semua benda yang tampak kotor adalah najis. Lumpur biasa pada sepatu, misalnya, dapat dibersihkan agar rapi, tetapi tidak otomatis tergolong najis.",
+        "Sebelum salat, kita memastikan badan, pakaian, dan tempat salat suci dari najis. Mintalah bantuan orang dewasa bila menemukan benda yang diduga najis. Tidak perlu menyentuhnya untuk membuktikan. Berlatihlah menggunakan gambar atau benda tiruan yang aman."
+      ],
+      "local": "Di madrasah Kota Gorontalo, pasir yang terbawa dari halaman atau tanah kebun tidak otomatis najis. Kita tetap merapikan kelas sebagai bentuk tanggung jawab.",
+      "love": "Cinta Allah dan Rasul: menjaga kesucian ketika ibadah. Cinta sesama: tidak mengejek teman yang pakaiannya kotor.",
+      "verse": 1,
+      "question": "Sepatu yang terkena lumpur halaman biasa otomatis termasuk najis?",
+      "options": [
+        "Ya, semua benda kotor pasti najis",
+        "Tidak, kotor belum tentu najis",
+        "Ya, karena warnanya cokelat"
+      ],
+      "answer": 1,
+      "explain": "Kotor secara kasatmata tidak selalu najis menurut fikih."
+    },
+    {
+      "title": "Kenali Tiga Jenis Najis",
+      "icon": "🧩",
+      "lead": "Ada najis ringan, sedang, dan berat.",
+      "paragraphs": [
+        "Dalam pembelajaran fikih yang umum diajarkan di madrasah, najis dibagi menjadi tiga: mukhaffafah (ringan), mutawassitah (sedang), dan mughallazah (berat). Pembagian ini membantu kita memilih cara bersuci yang tepat. Kita tidak boleh menyamakan semua jenis najis atau mengira semua bercak adalah najis.",
+        "Contoh najis ringan ialah air kencing bayi laki-laki berusia kurang dari dua tahun yang hanya mengonsumsi ASI dan belum makan makanan lain. Contoh najis sedang ialah air kencing orang yang tidak termasuk ketentuan najis ringan, tinja, dan darah. Contoh najis berat terkait anjing dan babi menurut fikih mazhab Syafi’i yang dipakai dalam pelajaran ini."
+      ],
+      "local": "Perjalanan dari kawasan Danau Limboto sampai pesisir Teluk Tomini sering melewati tanah basah. Tanah basah biasa bukan salah satu dari tiga contoh najis hanya karena terlihat kotor.",
+      "love": "Cinta sesama: jangan merendahkan orang yang sedang membersihkan najis. Cinta lingkungan: jaga halaman dan sumber air.",
+      "verse": 0,
+      "question": "Yang termasuk salah satu nama jenis najis adalah …",
+      "options": [
+        "Mukhaffafah",
+        "Makanan sehat",
+        "Daun hijau"
+      ],
+      "answer": 0,
+      "explain": "Mukhaffafah adalah istilah untuk najis ringan."
+    },
+    {
+      "title": "Najis Ringan: Mukhaffafah",
+      "icon": "🌦️",
+      "lead": "Setelah hilang benda najisnya, cukup percikkan air secara merata.",
+      "paragraphs": [
+        "Najis mukhaffafah dalam contoh pembelajaran ini ialah air kencing bayi laki-laki yang belum berusia dua tahun dan belum mengonsumsi makanan selain ASI. Jika bayi sudah makan makanan lain sebagai makanan, ketentuan najis ringan tersebut tidak digunakan. Air kencing bayi perempuan tidak termasuk contoh najis ringan pada pembagian yang dipelajari ini.",
+        "Cara bersuci: pastikan benda najisnya tidak tersisa, lalu percikkan air suci yang menyucikan hingga mengenai seluruh bagian yang terkena. Tidak perlu menyiram berulang-ulang seperti najis sedang. Dalam latihan, gunakan air berwarna sebagai penanda tiruan dan kain bersih; jangan memakai najis asli."
+      ],
+      "local": "Di rumah keluarga Gorontalo, kakak membantu orang tua menyiapkan kain latihan bersih untuk mempelajari cara memercikkan air dengan tangan.",
+      "love": "Cinta keluarga: membantu merawat bayi dengan lembut; cinta lingkungan: memakai air secukupnya.",
+      "verse": 1,
+      "question": "Untuk najis ringan sesuai syaratnya, cara bersuci yang tepat ialah …",
+      "options": [
+        "Memercikkan air merata setelah benda najis hilang",
+        "Menyapu debu saja tanpa air",
+        "Menggosok dengan pasir tujuh kali"
+      ],
+      "answer": 0,
+      "explain": "Dalam ketentuan najis ringan, air dipercikkan merata setelah zat najisnya hilang."
+    },
+    {
+      "title": "Najis Sedang: Mutawassitah",
+      "icon": "🫧",
+      "lead": "Hilangkan bendanya, lalu basuh dengan air sampai bersih.",
+      "paragraphs": [
+        "Najis mutawassitah adalah najis sedang. Contohnya air kencing pada umumnya, tinja, dan darah. Ketika terkena pakaian atau lantai, hilangkan terlebih dahulu wujud najis yang tampak. Setelah itu basuh bagian yang terkena dengan air suci yang menyucikan sampai hilang warna, bau, dan rasanya sejauh mungkin. Kita tidak perlu mencicipi najis; guru cukup menjelaskan cirinya.",
+        "Najis sedang berbeda dari lumpur dan debu biasa. Pada simulasi, guru memakai tanda warna yang aman pada kain bersih, kemudian menunjukkan cara membilasnya. Cuci tangan setelah kegiatan dan jangan menyentuh zat yang membahayakan."
+      ],
+      "local": "Saat kegiatan kelas di Gorontalo, seorang murid memakai air dari ember latihan, bukan air Danau Limboto. Air latihan digunakan secukupnya dan dibuang dengan tertib.",
+      "love": "Cinta diri dan teman: menjaga kebersihan bersama tanpa mempermalukan siapa pun; cinta alam: tidak mencemari danau.",
+      "verse": 0,
+      "question": "Cara membersihkan najis sedang pada kain adalah …",
+      "options": [
+        "Menutup kain dengan kertas",
+        "Menghilangkan najis lalu membasuh hingga bersih",
+        "Memercik sekali tanpa melihat sisanya"
+      ],
+      "answer": 1,
+      "explain": "Najis sedang dibasuh sampai zat dan sifat najisnya hilang sejauh mungkin."
+    },
+    {
+      "title": "Najis Berat: Mughallazah",
+      "icon": "🪣",
+      "lead": "Ada aturan khusus: tujuh basuhan, salah satunya dengan tanah suci.",
+      "paragraphs": [
+        "Dalam fikih mazhab Syafi’i yang menjadi acuan pembelajaran ini, najis mughallazah (berat) terkait anjing dan babi. Cara menyucikan bagian yang terkena setelah zat najisnya dihilangkan ialah membasuh tujuh kali dengan air, dan salah satu dari tujuh basuhan tersebut menggunakan tanah yang suci. Guru dapat mendemonstrasikan urutannya menggunakan kain dan gambar, tanpa menghadirkan hewan atau najis asli.",
+        "Menghitung tujuh basuhan merupakan latihan numerasi sederhana. Tujuh berarti tepat tujuh, bukan lima atau delapan. Kita boleh bersikap baik kepada semua hewan. Menjaga aturan bersuci tidak berarti menyakiti atau membenci makhluk ciptaan Allah."
+      ],
+      "local": "Di pekarangan madrasah dan kampung sekitar kebun di Gorontalo, murid belajar menghormati hewan dari kejauhan dan melapor kepada orang dewasa bila perlu bantuan.",
+      "love": "Cinta sesama makhluk: tidak menyakiti hewan. Cinta Allah: melaksanakan cara bersuci dengan tertib dan tidak berlebihan.",
+      "verse": 1,
+      "question": "Berapa kali basuhan pada cara bersuci najis berat menurut pelajaran ini?",
+      "options": [
+        "Tiga kali",
+        "Lima kali",
+        "Tujuh kali, satu di antaranya dengan tanah suci"
+      ],
+      "answer": 2,
+      "explain": "Aturannya tujuh basuhan; salah satunya memakai tanah suci."
+    },
+    {
+      "title": "Ayo Praktik dengan Aman dan Sayang Lingkungan",
+      "icon": "🌱",
+      "lead": "Kenali, pilih cara bersuci, lalu rawat air dan lingkungan.",
+      "paragraphs": [
+        "Untuk belajar bersama, guru menyiapkan tiga meja simulasi. Meja A untuk najis ringan: ambil kain tiruan bersih dan percikkan air. Meja B untuk najis sedang: tirukan membuang penanda noda dan membasuh hingga bersih. Meja C untuk najis berat: susun tujuh kartu basuhan, tandai satu kartu memakai tanah suci. Tiap kelompok mengamati bergantian sambil mendampingi teman yang masih belajar membaca.",
+        "Gunakan bahan aman dan bersih. Jangan mengamati najis asli, menyentuh cairan tubuh, atau mencicipi benda. Sesudah kegiatan, rapikan alat, cuci tangan dengan sabun, dan hemat air. Fiqih mengajarkan ketaatan sekaligus kasih sayang kepada diri sendiri, teman, dan bumi."
+      ],
+      "local": "Bersikap menjaga Teluk Tomini, Danau Limboto, kebun, dan saluran air Gorontalo dimulai dari kebiasaan kecil: tidak membuang sampah atau air kotor sembarangan.",
+      "love": "Cinta tanah air dan lingkungan: memelihara alam Gorontalo. Cinta sesama: saling membantu tanpa mengejek.",
+      "verse": 0,
+      "question": "Kegiatan simulasi yang aman adalah …",
+      "options": [
+        "Menggunakan najis asli",
+        "Menggunakan kain dan tanda tiruan yang aman",
+        "Mencicipi air bekas latihan"
+      ],
+      "answer": 1,
+      "explain": "Praktik di kelas harus menggunakan alat peraga aman, bukan najis asli."
+    }
+  ],
+  "games": [
+    {
+      "title": "Pasangkan tiga nama najis",
+      "kind": "matching",
+      "stimulus": "Di kelas I MIM Unggulan Kota Gorontalo, guru memasang tiga kartu istilah pada papan: mukhaffafah, mutawassitah, dan mughallazah. Di samping papan tersedia tiga kartu arti: ringan, sedang, dan berat. Anak-anak akan menghubungkan istilah Arab dengan artinya. Mereka tidak menggunakan benda najis sungguhan, melainkan hanya kartu kertas berwarna. Pada akhir kegiatan, ketua kelompok menyebutkan kembali bahwa pembagian ini adalah bagian dari fikih yang sedang mereka pelajari. Saat ada teman belum hafal, kelompok membaca bersama dengan suara lembut. Tujuan permainan bukan berlomba paling cepat, melainkan memahami perbedaan ketiga sebutan tersebut. Bu Guru meminta murid membaca cerita itu perlahan, menunjuk kata kunci, dan berdiskusi dengan teman sebangku. Semua jawaban perlu didasarkan pada informasi yang benar-benar tertulis. Jika belum yakin, murid boleh mengulang bacaan bersama, bukan menebak dari gambar saja. Teman yang sudah lancar membaca membantu temannya dengan sabar. Kelas sepakat bahwa kebersihan juga berarti tidak membuang sampah ke halaman maupun selokan. Sesudah tugas, semua alat peraga disimpan kembali dan tangan dibersihkan. Cara belajar demikian menunjukkan cinta ilmu, cinta sesama, dan rasa syukur kepada Allah.",
+      "prompt": "Cocokkan nama dengan arti jenis najis.",
+      "explain": "Pasangan tepat mengikuti arti atau cara bersuci masing-masing jenis najis.",
+      "pairs": [
+        {
+          "left": "Mukhaffafah",
+          "right": "Ringan"
+        },
+        {
+          "left": "Mutawassitah",
+          "right": "Sedang"
+        },
+        {
+          "left": "Mughallazah",
+          "right": "Berat"
+        }
+      ]
+    },
+    {
+      "title": "Susun langkah najis sedang",
+      "kind": "ordering",
+      "stimulus": "Seusai pelajaran menggambar pemandangan Danau Limboto, Rara melihat kain latihan dengan tanda merah buatan guru. Guru menegaskan bahwa warna itu hanya simulasi noda najis sedang, bukan darah atau zat najis asli. Empat kartu urutan disiapkan: kenali bagian yang terkena, hilangkan penanda noda, basuh menggunakan air bersih sampai hilang, dan rapikan alat serta cuci tangan. Rara diminta menyusun tindakan dari awal sampai akhir. Temannya memberi semangat dan mengingatkan agar tidak menghamburkan air. Kegiatan ini melatih kemampuan membaca urutan, bernalar, dan disiplin. Setelah selesai, siswa tidak menuangkan air bekas latihan ke danau atau halaman sembarangan. Bu Guru meminta murid membaca cerita itu perlahan, menunjuk kata kunci, dan berdiskusi dengan teman sebangku. Semua jawaban perlu didasarkan pada informasi yang benar-benar tertulis. Jika belum yakin, murid boleh mengulang bacaan bersama, bukan menebak dari gambar saja. Teman yang sudah lancar membaca membantu temannya dengan sabar. Kelas sepakat bahwa kebersihan juga berarti tidak membuang sampah ke halaman maupun selokan. Sesudah tugas, semua alat peraga disimpan kembali dan tangan dibersihkan. Cara belajar demikian menunjukkan cinta ilmu, cinta sesama, dan rasa syukur kepada Allah.",
+      "prompt": "Urutkan empat langkah yang benar.",
+      "explain": "Urutkan tindakan dari pengenalan dan persiapan hingga selesai dan rapi.",
+      "pieces": [
+        "Kenali bagian yang terkena",
+        "Hilangkan zat atau penanda najis",
+        "Basuh dengan air hingga bersih",
+        "Rapikan alat dan cuci tangan"
+      ]
+    },
+    {
+      "title": "Pilah tiga contoh",
+      "kind": "drag",
+      "stimulus": "Ketika berkunjung ke kebun sekolah, sekelompok siswa menemukan tiga gambar dalam kotak belajar. Gambar pertama menjelaskan syarat air kencing bayi laki-laki berusia kurang dari dua tahun yang hanya minum ASI. Gambar kedua menggambarkan air kencing orang dewasa. Gambar ketiga adalah ilustrasi benda terkena najis terkait anjing, menurut fikih Syafi’i yang dipelajari di kelas. Siswa harus mengirim tiap kartu ke wadah jenis najis yang sesuai. Guru mengingatkan bahwa ini adalah latihan tentang hukum bersuci, bukan alasan untuk menyakiti hewan ataupun meremehkan orang lain. Siswa juga membedakan bahwa tanah kebun biasa tidak otomatis najis. Bu Guru meminta murid membaca cerita itu perlahan, menunjuk kata kunci, dan berdiskusi dengan teman sebangku. Semua jawaban perlu didasarkan pada informasi yang benar-benar tertulis. Jika belum yakin, murid boleh mengulang bacaan bersama, bukan menebak dari gambar saja. Teman yang sudah lancar membaca membantu temannya dengan sabar. Kelas sepakat bahwa kebersihan juga berarti tidak membuang sampah ke halaman maupun selokan. Sesudah tugas, semua alat peraga disimpan kembali dan tangan dibersihkan. Cara belajar demikian menunjukkan cinta ilmu, cinta sesama, dan rasa syukur kepada Allah.",
+      "prompt": "Pilih kartu, lalu ketuk kelompok yang tepat atau tarik dengan mouse.",
+      "explain": "Setiap kartu ditempatkan pada kelompok sesuai sifat dan aturannya.",
+      "groups": [
+        "Ringan",
+        "Sedang",
+        "Berat"
+      ],
+      "items": [
+        {
+          "label": "Air kencing bayi laki-laki sesuai syarat ASI",
+          "group": "Ringan"
+        },
+        {
+          "label": "Air kencing orang dewasa",
+          "group": "Sedang"
+        },
+        {
+          "label": "Najis terkait anjing menurut fikih Syafi’i",
+          "group": "Berat"
+        }
+      ]
+    },
+    {
+      "title": "Satu tindakan tepat",
+      "kind": "single",
+      "stimulus": "Ayah mengajak Nabil berkunjung ke rumah kerabat di dekat pesisir Teluk Tomini. Sebelum salat, Nabil melihat sandal yang berlumpur karena berjalan di halaman saat hujan. Ia hampir menyebut semua lumpur sebagai najis. Ayah mengingatkan bahwa sesuatu yang terlihat kotor belum tentu tergolong najis menurut fikih. Sandal tetap sebaiknya dibersihkan agar rumah dan tempat salat rapi. Nabil kemudian menaruh sandal di tempat yang disediakan, membersihkan kaki bila perlu, dan memastikan pakaiannya layak untuk ibadah. Ia tidak menuduh sandal temannya najis tanpa alasan. Sikap hati-hati dan sopan menjadi bagian dari kebiasaan baik keluarga. Bu Guru meminta murid membaca cerita itu perlahan, menunjuk kata kunci, dan berdiskusi dengan teman sebangku. Semua jawaban perlu didasarkan pada informasi yang benar-benar tertulis. Jika belum yakin, murid boleh mengulang bacaan bersama, bukan menebak dari gambar saja. Teman yang sudah lancar membaca membantu temannya dengan sabar. Kelas sepakat bahwa kebersihan juga berarti tidak membuang sampah ke halaman maupun selokan. Sesudah tugas, semua alat peraga disimpan kembali dan tangan dibersihkan. Cara belajar demikian menunjukkan cinta ilmu, cinta sesama, dan rasa syukur kepada Allah.",
+      "prompt": "Pilih kesimpulan paling tepat.",
+      "explain": "Jawaban yang tepat mengikuti materi thaharah dan sikap penuh kasih sayang.",
+      "options": [
+        "Lumpur biasa otomatis najis berat",
+        "Kotor tidak selalu berarti najis",
+        "Semua sandal harus dibasuh tujuh kali"
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Pilih kebiasaan baik",
+      "kind": "multi",
+      "stimulus": "Hari Jumat, kelas I mengadakan gerakan cinta lingkungan Gorontalo. Kegiatan ini berkaitan dengan kebiasaan bersih yang dipelajari dalam thaharah. Sebagian murid membersihkan meja; sebagian lain mengumpulkan sampah kertas. Guru berkata bahwa menjaga tempat belajar nyaman merupakan wujud menghargai sesama. Siswa diajak memakai air secukupnya, bukan menyiram tanpa tujuan. Mereka juga harus menolong teman yang kesulitan membaca kartu instruksi. Ketika ada murid yang pakaiannya terkena noda, teman lain tidak boleh mengejeknya. Setiap kelompok mendiskusikan perilaku yang sesuai dengan cinta Allah, cinta sesama, dan cinta kelestarian alam, sambil tetap membedakan kebersihan umum dari ketentuan khusus menghilangkan najis. Bu Guru meminta murid membaca cerita itu perlahan, menunjuk kata kunci, dan berdiskusi dengan teman sebangku. Semua jawaban perlu didasarkan pada informasi yang benar-benar tertulis. Jika belum yakin, murid boleh mengulang bacaan bersama, bukan menebak dari gambar saja. Teman yang sudah lancar membaca membantu temannya dengan sabar. Kelas sepakat bahwa kebersihan juga berarti tidak membuang sampah ke halaman maupun selokan. Sesudah tugas, semua alat peraga disimpan kembali dan tangan dibersihkan. Cara belajar demikian menunjukkan cinta ilmu, cinta sesama, dan rasa syukur kepada Allah.",
+      "prompt": "Pilih SEMUA kebiasaan yang baik.",
+      "explain": "Jawaban yang tepat mengikuti materi thaharah dan sikap penuh kasih sayang.",
+      "options": [
+        "Menghemat air saat praktik",
+        "Mengejek teman yang terkena noda",
+        "Membantu teman membaca petunjuk",
+        "Membuang sampah ke Danau Limboto"
+      ],
+      "correct": [
+        0,
+        2
+      ]
+    },
+    {
+      "title": "Pasangkan cara bersuci",
+      "kind": "matching",
+      "stimulus": "Guru menyiapkan tiga meja latihan di ruang kelas dan menempelkan gambar Teluk Tomini, Danau Limboto, serta kebun jagung sebagai hiasan daerah. Ketiganya adalah meja simulasi, bukan meja berisi benda najis sungguhan. Meja pertama menggambarkan contoh najis ringan sesuai syarat; meja kedua menggambarkan najis sedang; meja ketiga menggambarkan najis berat menurut fikih Syafi’i. Di meja-meja itu tersedia gambar tetes air, kain bersih, dan kartu hitung. Semua murid diminta memasangkan jenis najis dengan cara menyucikannya. Guru mengajak anak berbicara pelan-pelan agar tidak salah mengira percikan air cukup untuk semua jenis najis. Setelah bermain, murid bersama-sama menjaga kebersihan alat. Bu Guru meminta murid membaca cerita itu perlahan, menunjuk kata kunci, dan berdiskusi dengan teman sebangku. Semua jawaban perlu didasarkan pada informasi yang benar-benar tertulis. Jika belum yakin, murid boleh mengulang bacaan bersama, bukan menebak dari gambar saja. Teman yang sudah lancar membaca membantu temannya dengan sabar. Kelas sepakat bahwa kebersihan juga berarti tidak membuang sampah ke halaman maupun selokan. Sesudah tugas, semua alat peraga disimpan kembali dan tangan dibersihkan. Cara belajar demikian menunjukkan cinta ilmu, cinta sesama, dan rasa syukur kepada Allah.",
+      "prompt": "Pasangkan jenis najis dengan cara bersucinya.",
+      "explain": "Pasangan tepat mengikuti arti atau cara bersuci masing-masing jenis najis.",
+      "pairs": [
+        {
+          "left": "Ringan",
+          "right": "Percikkan air merata"
+        },
+        {
+          "left": "Sedang",
+          "right": "Basuh hingga najis hilang"
+        },
+        {
+          "left": "Berat",
+          "right": "Tujuh basuhan; satu dengan tanah suci"
+        }
+      ]
+    },
+    {
+      "title": "Hitung tujuh basuhan",
+      "kind": "ordering",
+      "stimulus": "Pada latihan numerasi Fiqih, siswa memperoleh empat kartu yang meringkas urutan simulasi najis berat. Guru menjelaskan aturan menurut fikih Syafi’i: hilangkan zat najis lebih dahulu, kemudian lakukan tujuh basuhan dengan air, salah satunya memakai tanah yang suci. Agar mudah diingat, kelompok memakai gambar ember dan tujuh lingkaran hitung. Tanah yang digunakan harus suci dan bersih. Dalam demonstrasi ini tidak ada najis asli atau hewan. Setelah membaca kartu, murid mengatur urutannya dari persiapan hingga penyelesaian, lalu memeriksa apakah jumlah basuhan benar-benar tujuh. Teman yang belum lancar menghitung dibantu tanpa ditertawakan. Air latihan dijaga agar tidak terbuang sia-sia. Bu Guru meminta murid membaca cerita itu perlahan, menunjuk kata kunci, dan berdiskusi dengan teman sebangku. Semua jawaban perlu didasarkan pada informasi yang benar-benar tertulis. Jika belum yakin, murid boleh mengulang bacaan bersama, bukan menebak dari gambar saja. Teman yang sudah lancar membaca membantu temannya dengan sabar. Kelas sepakat bahwa kebersihan juga berarti tidak membuang sampah ke halaman maupun selokan. Sesudah tugas, semua alat peraga disimpan kembali dan tangan dibersihkan. Cara belajar demikian menunjukkan cinta ilmu, cinta sesama, dan rasa syukur kepada Allah.",
+      "prompt": "Susun urutan simulasi najis berat.",
+      "explain": "Urutkan tindakan dari pengenalan dan persiapan hingga selesai dan rapi.",
+      "pieces": [
+        "Hilangkan zat najis terlebih dahulu",
+        "Siapkan air dan tanah yang suci",
+        "Lakukan tujuh basuhan; satu memakai tanah suci",
+        "Pastikan bersih, lalu rapikan alat"
+      ]
+    },
+    {
+      "title": "Kartu tindakan aman",
+      "kind": "drag",
+      "stimulus": "Di sekitar Danau Limboto, kelas I membuat sudut edukasi bertema thaharah dan keselamatan. Tiga kelompok menerima kartu kegiatan. Kartu pertama berisi kegiatan memercik air pada kain latihan bersih yang menggambarkan najis ringan. Kartu kedua berisi kegiatan membasuh penanda noda sampai hilang pada simulasi najis sedang. Kartu ketiga berisi kegiatan menghitung tujuh basuhan, satu memakai tanah suci, untuk simulasi najis berat. Semua kelompok harus menempatkan kegiatan ke kategori yang benar. Guru menegaskan bahwa setiap gambar hanya peraga agar tidak ada murid yang perlu menyentuh najis asli. Setelahnya, siswa mengucapkan terima kasih kepada teman yang sudah membantu. Bu Guru meminta murid membaca cerita itu perlahan, menunjuk kata kunci, dan berdiskusi dengan teman sebangku. Semua jawaban perlu didasarkan pada informasi yang benar-benar tertulis. Jika belum yakin, murid boleh mengulang bacaan bersama, bukan menebak dari gambar saja. Teman yang sudah lancar membaca membantu temannya dengan sabar. Kelas sepakat bahwa kebersihan juga berarti tidak membuang sampah ke halaman maupun selokan. Sesudah tugas, semua alat peraga disimpan kembali dan tangan dibersihkan. Cara belajar demikian menunjukkan cinta ilmu, cinta sesama, dan rasa syukur kepada Allah.",
+      "prompt": "Kelompokkan kegiatan simulasi sesuai jenis najis.",
+      "explain": "Setiap kartu ditempatkan pada kelompok sesuai sifat dan aturannya.",
+      "groups": [
+        "Ringan",
+        "Sedang",
+        "Berat"
+      ],
+      "items": [
+        {
+          "label": "Simulasi memercik air merata",
+          "group": "Ringan"
+        },
+        {
+          "label": "Simulasi membasuh hingga bersih",
+          "group": "Sedang"
+        },
+        {
+          "label": "Simulasi tujuh basuhan, satu dengan tanah suci",
+          "group": "Berat"
+        }
+      ]
+    },
+    {
+      "title": "Menghitung basuhan",
+      "kind": "single",
+      "stimulus": "Amina duduk bersama kelompoknya setelah melihat demonstrasi di meja C. Guru menerangkan bahwa najis berat dalam fikih yang sedang dipelajari disucikan dengan tujuh kali basuhan, dan salah satunya menggunakan tanah yang suci. Untuk berlatih berhitung, Amina menyiapkan tujuh kartu angka. Ia sudah meletakkan empat kartu di atas meja. Berapa kartu lagi diperlukan agar semua tujuh kartu tersedia? Guru mengingatkan bahwa bilangan kartu adalah alat bantu menghitung, bukan pengganti cara bersuci yang sebenarnya. Kelompok menghitung perlahan menggunakan jari. Setelah menemukan jawabannya, mereka mengembalikan semua kartu ke kotak dan berjanji memakai air secukupnya saat latihan di sekolah. Bu Guru meminta murid membaca cerita itu perlahan, menunjuk kata kunci, dan berdiskusi dengan teman sebangku. Semua jawaban perlu didasarkan pada informasi yang benar-benar tertulis. Jika belum yakin, murid boleh mengulang bacaan bersama, bukan menebak dari gambar saja. Teman yang sudah lancar membaca membantu temannya dengan sabar. Kelas sepakat bahwa kebersihan juga berarti tidak membuang sampah ke halaman maupun selokan. Sesudah tugas, semua alat peraga disimpan kembali dan tangan dibersihkan. Cara belajar demikian menunjukkan cinta ilmu, cinta sesama, dan rasa syukur kepada Allah.",
+      "prompt": "Ada 7 kartu. Sudah ada 4. Berapa kartu lagi diperlukan?",
+      "explain": "Jawaban yang tepat mengikuti materi thaharah dan sikap penuh kasih sayang.",
+      "options": [
+        "Dua kartu",
+        "Tiga kartu",
+        "Empat kartu"
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Pilih pernyataan benar",
+      "kind": "multi",
+      "stimulus": "Dalam acara pameran kecil di MIM Unggulan Kota Gorontalo, para murid menampilkan poster tentang najis dan cara bersuci. Ada poster berisi jenis najis ringan, sedang, dan berat. Ada pula poster tentang menjaga lingkungan Teluk Tomini dan Danau Limboto. Guru mengatakan bahwa poster yang benar harus memuat informasi fikih tepat serta sikap penuh cinta. Murid harus membedakan fakta dan kekeliruan. Misalnya, najis sedang dibasuh sampai zat najisnya hilang, bukan sekadar ditutup kain. Untuk najis ringan, syarat contoh bayi harus diperhatikan. Dalam pembelajaran najis berat menurut mazhab Syafi’i, hitungan tujuh kali juga perlu dijaga. Anak-anak diminta memilih semua pernyataan benar berdasarkan materi, kemudian menjelaskan mengapa yang lain keliru.",
+      "prompt": "Pilih SEMUA pernyataan benar.",
+      "explain": "Jawaban yang tepat mengikuti materi thaharah dan sikap penuh kasih sayang.",
+      "options": [
+        "Najis sedang dibersihkan dengan membasuh hingga bersih",
+        "Semua lumpur biasa adalah najis berat",
+        "Najis berat: tujuh basuhan, satu memakai tanah suci",
+        "Kita boleh mengejek teman yang terkena noda"
+      ],
+      "correct": [
+        0,
+        2
+      ]
+    }
+  ],
+  "assessment": [
+    {
+      "title": "Memahami arti najis",
+      "level": 1,
+      "points": 8,
+      "stimulus": "Di pagi hari, Nisa memasuki ruang kelas I dengan sepatu yang terkena tanah basah dari halaman madrasah. Temannya bertanya apakah tanah itu pasti najis. Guru mengajak semua siswa membaca pengertian najis dengan teliti. Najis adalah sesuatu yang menurut aturan fikih harus dibersihkan dari badan, pakaian, atau tempat salat. Benda yang kotor di mata manusia belum tentu najis. Nisa mengelap sepatunya agar kelas tetap bersih dan rapi. Ia juga menaruh sepatu pada rak supaya lantai tidak licin. Setelah itu guru menampilkan dua gambar: lumpur halaman dan ilustrasi air kencing. Siswa diminta memilih definisi yang paling tepat berdasarkan pelajaran, bukan menilai hanya karena warna atau baunya. Mereka berdiskusi dengan santun.",
+      "question": "Apa arti najis menurut materi?",
+      "options": [
+        "Semua benda yang berwarna gelap",
+        "Sesuatu yang menurut fikih harus disucikan",
+        "Semua tanah dari halaman"
+      ],
+      "correct": 1,
+      "explain": "Najis ditetapkan oleh hukum fikih, bukan semata tampilannya."
+    },
+    {
+      "title": "Mengenali jenis ringan",
+      "level": 1,
+      "points": 8,
+      "stimulus": "Beni memperhatikan sebuah poster perawatan bayi di ruang belajar. Poster itu menggambarkan bayi laki-laki berusia satu tahun yang hanya mendapat ASI dan belum makan makanan lain. Di sebelahnya ada gambar anak laki-laki berusia tiga tahun yang sudah makan nasi, serta gambar bayi perempuan. Guru menerangkan bahwa contoh najis ringan dalam pembagian fikih yang digunakan di kelas memiliki syarat tertentu. Tidak semua air kencing bayi masuk kategori najis ringan. Siswa diminta menyimak umur, jenis kelamin bayi, dan jenis makanannya. Beni menandai informasi penting dengan tiga tanda kecil pada buku. Guru menjelaskan bahwa latihan ini memakai cerita dan gambar saja. Anak tidak boleh memegang benda najis asli untuk memeriksa jawaban.",
+      "question": "Contoh mana yang memenuhi syarat najis ringan?",
+      "options": [
+        "Air kencing bayi laki-laki 1 tahun, hanya ASI",
+        "Air kencing anak laki-laki 3 tahun",
+        "Air kencing bayi perempuan"
+      ],
+      "correct": 0,
+      "explain": "Contoh najis ringan mempunyai syarat bayi laki-laki kurang dari dua tahun yang hanya mengonsumsi ASI."
+    },
+    {
+      "title": "Tiga nama golongan",
+      "level": 1,
+      "points": 8,
+      "stimulus": "Dari jendela kelas terlihat awan di atas Kota Gorontalo. Murid sedang membuat pohon konsep bertema thaharah. Guru memberi tiga label istilah: mukhaffafah, mutawassitah, dan mughallazah. Setiap istilah memiliki arti yang perlu dipahami agar murid dapat memilih cara bersuci sesuai ketentuannya. Ada juga gambar air, tanah suci, dan kain sebagai peraga. Guru menegaskan bahwa alat peraga tersebut hanya membantu memahami proses, bukan alasan memperlakukan semua jenis najis dengan cara yang sama. Murid membaca istilah Arab secara bergantian, kemudian memasangkan dengan kata ringan, sedang, dan berat. Saat seorang siswa salah membaca, temannya membantu mengulang secara perlahan. Kegiatan ditutup dengan merapikan kartu tanpa membuang kertas ke halaman.",
+      "question": "Mutawassitah berarti najis …",
+      "options": [
+        "Ringan",
+        "Sedang",
+        "Berat"
+      ],
+      "correct": 1,
+      "explain": "Mutawassitah artinya sedang."
+    },
+    {
+      "title": "Memilih cara bersuci",
+      "level": 2,
+      "points": 10,
+      "stimulus": "Kelompok A mengerjakan tugas di halaman madrasah dengan kain peraga. Guru membuat tanda warna aman pada kain untuk melambangkan najis sedang. Tanda itu bukan darah atau cairan tubuh asli. Guru meminta murid menjelaskan apa yang harus dilakukan agar bagian yang terkena dapat disucikan. Ada kelompok yang ingin langsung menutupi noda dengan kertas. Kelompok lain berpendapat cukup memercik air sekali tanpa menghilangkan tanda. Guru mengajak siswa mengingat aturan: untuk najis sedang, hilangkan zat najis terlebih dahulu dan basuh dengan air suci sampai bersih, termasuk sifat najisnya sejauh mungkin. Setelah percobaan, kelas menaruh alat di tempatnya dan tidak membuang air bekas simulasi ke saluran secara sembarangan.",
+      "question": "Tindakan paling tepat untuk najis sedang?",
+      "options": [
+        "Menutup noda dengan kertas",
+        "Hilangkan zat najis lalu basuh hingga bersih",
+        "Cukup meniup bagian yang terkena"
+      ],
+      "correct": 1,
+      "explain": "Najis sedang perlu dihilangkan lalu dibasuh dengan air."
+    },
+    {
+      "title": "Memercik pada kondisi tepat",
+      "level": 2,
+      "points": 10,
+      "stimulus": "Di rumah dekat kebun jagung Gorontalo, kakak sedang membantu ibu merapikan barang untuk bayi laki-laki mereka yang berusia delapan bulan dan hanya mengonsumsi ASI. Guru sebelumnya telah menjelaskan contoh najis ringan serta cara menyucikannya. Dalam kegiatan kelas, kakak mempraktikkan langkah menggunakan kain peraga yang sudah bebas dari tanda najis. Ia menyiapkan air yang bersih dan memastikan tidak ada sisa zat najis pada permukaan. Temannya bertanya apakah cara memercikkan air ini dapat digunakan untuk seluruh najis lain. Kakak menjawab bahwa setiap jenis najis memiliki aturan sendiri. Mereka pun membaca ulang kartu materi sebelum memilih cara yang sesuai. Peragaan dilakukan aman dan air digunakan secukupnya.",
+      "question": "Cara menyucikan contoh najis ringan sesuai syarat?",
+      "options": [
+        "Percikkan air merata setelah zat najis hilang",
+        "Basuh tepat tujuh kali dengan tanah",
+        "Tidak perlu air sama sekali"
+      ],
+      "correct": 0,
+      "explain": "Untuk contoh najis ringan sesuai syarat, cukup percik air secara merata setelah zat najis hilang."
+    },
+    {
+      "title": "Berhitung bersama",
+      "level": 2,
+      "points": 10,
+      "stimulus": "Guru kelas I membawa tujuh kartu biru untuk membantu murid memahami hitungan basuhan pada najis berat. Setiap kartu mewakili satu basuhan, dan salah satu kartu diberi simbol tanah suci. Guru menegaskan bahwa ketentuan ini mengikuti fikih mazhab Syafi’i yang dipelajari di kelas. Fadli telah memasang lima kartu pada papan. Ia kemudian menghitung jumlah kartu yang masih berada dalam kotak agar genap tujuh. Teman-teman tidak menyentuh najis asli karena seluruh kegiatan hanya simulasi. Mereka menyebut bilangan satu sampai tujuh sambil menunjuk tiap kartu. Seusai berhitung, siswa mengembalikan kartu ke kotak dan mengingat pesan agar tidak membuang air dengan sia-sia ketika praktik bersuci.",
+      "question": "Tersedia 7 kartu, terpasang 5. Sisa kartu yang belum terpasang?",
+      "options": [
+        "1 kartu",
+        "2 kartu",
+        "3 kartu"
+      ],
+      "correct": 1,
+      "explain": "7 dikurangi 5 sama dengan 2."
+    },
+    {
+      "title": "Bertindak saat melihat noda",
+      "level": 2,
+      "points": 10,
+      "stimulus": "Saat persiapan salat berjamaah di madrasah, Dini melihat ada noda yang diduga najis pada alas latihan. Ia belum tahu sumber noda tersebut dan tidak ingin membuat kesimpulan sembarangan. Guru mengajarkan cara berhati-hati: hindari menyentuh sesuatu yang mungkin berbahaya, tanyakan kepada orang dewasa, lalu gunakan petunjuk bersuci yang benar jika benar terbukti najis. Dini juga mengingat bahwa membantu menjaga kebersihan bukan berarti mengejek siapa pun. Di kelas, ia dan teman-teman menggunakan kartu gambar untuk menyelidiki masalah dengan aman. Pada akhir pelajaran, mereka membaca pesan untuk merawat tempat ibadah dan menjaga air di sekitar lingkungan Gorontalo tetap bersih. Keputusan yang tepat harus menggabungkan keselamatan, pengetahuan, dan sopan santun.",
+      "question": "Apa tindakan pertama yang paling bijak?",
+      "options": [
+        "Mencicipi noda untuk memastikan",
+        "Mengejek pemilik alas",
+        "Meminta bantuan guru tanpa menyentuh noda"
+      ],
+      "correct": 2,
+      "explain": "Utamakan keselamatan dan mintalah bantuan orang dewasa."
+    },
+    {
+      "title": "Menganalisis dua jenis najis",
+      "level": 3,
+      "points": 12,
+      "stimulus": "Dua kelompok membuat laporan simulasi di kelas. Kelompok Merpati mendapat gambar contoh najis sedang dan menulis cara membersihkan: membuang zat najis lalu membasuh sampai bersih. Kelompok Maleo mendapat gambar najis berat menurut fikih Syafi’i, tetapi menulis bahwa cukup satu percikan air. Keduanya menggunakan kain baru dan gambar tiruan, sehingga tidak ada najis asli. Guru meminta murid membandingkan laporan dengan aturan yang sudah dipelajari. Kelompok Merpati memperlihatkan urutan yang sesuai, sedangkan kelompok Maleo perlu memperbaiki jumlah basuhan dan penggunaan tanah suci. Murid diminta memilih solusi berdasarkan bukti, bukan karena warna gambar paling menarik. Setelah koreksi, kedua kelompok saling memberi apresiasi dan merapikan alat bersama.",
+      "question": "Perbaikan paling tepat untuk laporan kelompok Maleo?",
+      "options": [
+        "Ganti menjadi tujuh basuhan, salah satu memakai tanah suci",
+        "Cukup satu percikan air",
+        "Tidak perlu dibersihkan"
+      ],
+      "correct": 0,
+      "explain": "Najis berat dalam fikih Syafi’i disucikan dengan tujuh basuhan, satu memakai tanah suci."
+    },
+    {
+      "title": "Menalar perbedaan kotor dan najis",
+      "level": 3,
+      "points": 12,
+      "stimulus": "Ketika mendampingi kegiatan menanam di kebun madrasah, guru melihat dua anak berdiskusi. Taufik memegang sepatu dengan lumpur biasa dari jalan. Sahabatnya sedang membaca kartu kasus tentang air kencing orang dewasa yang mengenai kain. Taufik berkata bahwa kedua kejadian pasti harus dibasuh tujuh kali menggunakan tanah. Guru tidak langsung menyalahkan, tetapi meminta mereka membandingkan alasan pada masing-masing kasus. Lumpur biasa tidak otomatis najis. Sementara itu, air kencing orang dewasa masuk contoh najis sedang dalam pelajaran. Cara menyucikan najis sedang ialah menghilangkan zat najis lalu membasuh hingga bersih. Guru memuji kelompok yang dapat menyebutkan alasan dengan runtut. Mereka lalu membersihkan alat berkebun dan tidak membuang sampah ke parit.",
+      "question": "Kesimpulan yang paling beralasan?",
+      "options": [
+        "Keduanya najis berat",
+        "Lumpur biasa tidak otomatis najis, air kencing orang dewasa najis sedang",
+        "Keduanya cukup dilap tanpa mempertimbangkan aturan"
+      ],
+      "correct": 1,
+      "explain": "Benda kotor dan najis harus dibedakan, lalu cara bersuci dipilih sesuai jenis."
+    },
+    {
+      "title": "Keputusan hemat air",
+      "level": 3,
+      "points": 12,
+      "stimulus": "Sebuah kelompok membuat rancangan kegiatan simulasi thaharah untuk pameran di Kota Gorontalo. Mereka harus mempraktikkan tiga jenis najis menggunakan hanya alat peraga yang aman. Meja A memakai kain bersih dan percikan air untuk menggambarkan cara pada najis ringan sesuai syarat. Meja B menampilkan pembasuhan sampai tanda warna hilang untuk menggambarkan najis sedang. Meja C memakai tujuh kartu basuhan, salah satunya bertanda tanah suci untuk menjelaskan najis berat menurut mazhab Syafi’i. Guru mengingatkan bahwa menjaga kebersihan tidak boleh membuat murid membuang air berlebihan. Air untuk simulasi harus cukup, alat tidak boleh membahayakan, dan seluruh murid harus mendapat giliran. Mereka berdiskusi tentang pilihan yang paling aman, benar, dan menghargai lingkungan Teluk Tomini serta Danau Limboto.",
+      "question": "Rancangan manakah yang paling tepat?",
+      "options": [
+        "Semua meja memakai najis asli supaya nyata",
+        "Setiap meja mengikuti ketentuan masing-masing dan memakai alat aman serta air secukupnya",
+        "Semua meja cukup memakai satu metode percikan"
+      ],
+      "correct": 1,
+      "explain": "Pilih metode sesuai jenis najis, keselamatan simulasi, dan hemat air."
+    }
+  ]
+};
+const DEVELOPER={name:'Abdurahman M. Akadji, S.Pd., Gr.',school:'MIM Unggulan Kota Gorontalo',email:'abdurrahman.akadji@gmail.com',photo:'https://iili.io/n8Iq3B4.jpg'};
+const PAGE_TITLE='Thaharah: Jenis Najis dan Cara Menyucikannya';
+const KEY='mpi-fiqih-thaharah-v3';
+function defaults(){return {name:'',grade:'',learned:[false,false,false,false,false,false],gameAnswers:[],assessAnswers:[],completedAt:null};}
+let state=defaults();
+try{const saved=JSON.parse(localStorage.getItem(KEY));if(saved&&typeof saved==='object'){state={...defaults(),...saved};if(!Array.isArray(state.learned)||state.learned.length!==6)state.learned=defaults().learned;if(!Array.isArray(state.gameAnswers))state.gameAnswers=[];if(!Array.isArray(state.assessAnswers))state.assessAnswers=[];state.gameAnswers=state.gameAnswers.slice(0,10);state.assessAnswers=state.assessAnswers.slice(0,10);}}catch(e){}
+let page='splash',modal=null,guideIndex=0,lessonIndex=0,gameIndex=0,assessIndex=0,lessonError='',identityError='',work=null,workWarning='',musicEnabled=false,musicStarting=false,audioCtx=null,musicTimer=null,musicNote=0,roleDrag=null,tickerPaused=false;
+const MEDIA_PREFS='mpi-fiqih-media-v1';
+let effectsEnabled=true;
+try{const mediaPrefs=JSON.parse(localStorage.getItem(MEDIA_PREFS)||'{}');effectsEnabled=mediaPrefs.effects!==false;}catch(e){}
+function saveMediaPreferences(){try{localStorage.setItem(MEDIA_PREFS,JSON.stringify({effects:effectsEnabled}));}catch(e){}}
+
+const app=document.getElementById('app');
+const esc=(s)=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const number=(x)=>new Intl.NumberFormat('id-ID').format(x);
+const allLearned=()=>state.learned.every(Boolean);
+const gameDone=()=>state.gameAnswers.length===10;
+const assessDone=()=>state.assessAnswers.length===10;
+const gameCorrect=()=>state.gameAnswers.filter(a=>a.correct).length;
+const testScore=()=>DB.assessment.reduce((sum,q,i)=>sum+(state.assessAnswers[i]?.correct?q.points:0),0);
+const record=()=>{try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}};
+const scrollTop=()=>window.scrollTo({top:0,behavior:'instant'});
+
+// Fungsi untuk mengirim data ke Google Sheets
+async function sendDataToGAS() {
+  if (GAS_URL === "URL_GAS_ANDA_DISINI" || !GAS_URL) {
+    console.warn("GAS_URL belum diatur. Data tidak dikirim ke server.");
+    return;
+  }
+  try {
+    const dataSoal = [];
+    DB.games.forEach((g, i) => {
+      dataSoal.push({
+        kategori: "Bermain",
+        nomor: i + 1,
+        judul: g.title,
+        pertanyaan: g.prompt,
+        pilihan: JSON.stringify(g.options || g.pairs || g.pieces || g.items)
+      });
+    });
+    DB.assessment.forEach((a, i) => {
+      dataSoal.push({
+        kategori: "Berlatih",
+        nomor: i + 1,
+        judul: a.title,
+        pertanyaan: a.question,
+        pilihan: JSON.stringify(a.options)
+      });
+    });
+
+    let benar = 0;
+    let salah = 0;
+    const detail = {};
+    
+    state.assessAnswers.forEach((ans, i) => {
+      if(ans.correct) benar++; else salah++;
+      detail[`Soal ${i+1}`] = ans.correct ? "Benar" : "Salah";
+    });
+
+    const payload = {
+      type: 'submit_all',
+      dataSoal: dataSoal,
+      hasil: {
+        nama: state.name,
+        kelas: state.grade,
+        benar: benar,
+        salah: salah,
+        detail: detail
+      }
+    };
+
+    fetch(GAS_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      body: JSON.stringify(payload),
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' }
+    }).catch(e => console.error("Error mengirim ke GAS:", e));
+  } catch (error) {
+    console.error("Gagal menyiapkan data GAS", error);
+  }
+}
+
+function audioEngine(){
+ const Engine=window.AudioContext||window.webkitAudioContext;
+ if(!Engine)return null;
+ if(!audioCtx){try{audioCtx=new Engine();}catch(e){return null;}}
+ return audioCtx;
+}
+function playTone(ctx,freq,at,dur,volume=.045,wave='sine'){
+ const osc=ctx.createOscillator(),gain=ctx.createGain();
+ const onset=Math.max(at,ctx.currentTime+.006),end=onset+dur;
+ osc.type=wave;
+ osc.frequency.setValueAtTime(freq,onset);
+ gain.gain.setValueAtTime(.0001,onset);
+ gain.gain.exponentialRampToValueAtTime(Math.max(.0002,volume),onset+Math.min(.025,dur*.22));
+ gain.gain.exponentialRampToValueAtTime(.0001,end);
+ osc.connect(gain);gain.connect(ctx.destination);
+ osc.onended=()=>{osc.disconnect();gain.disconnect();};
+ osc.start(onset);osc.stop(end+.022);
+}
+function sound(name){
+ if(!effectsEnabled)return;
+ try{
+  const ctx=audioEngine();if(!ctx)return;
+  const seq={
+   click:[[690,0,.09,.075,'sine']],
+   next:[[470,0,.09,.058,'sine'],[740,.08,.15,.07,'triangle']],
+   good:[[523.25,0,.14,.085,'sine'],[659.25,.11,.19,.09,'sine'],[783.99,.23,.29,.085,'triangle']],
+   bad:[[340,0,.2,.078,'triangle'],[277.18,.17,.31,.076,'triangle']],
+   complete:[[523.25,0,.16,.07,'sine'],[659.25,.15,.16,.075,'sine'],[783.99,.31,.15,.082,'sine'],[1046.5,.47,.34,.085,'triangle']]
+  }[name]||[[600,0,.09,.06,'sine']];
+  const schedule=()=>{const at=ctx.currentTime+.015;for(const [f,d,t,v,w] of seq)playTone(ctx,f,at+d,t,v,w);};
+  if(ctx.state==='running')schedule();
+  else ctx.resume().then(()=>{if(ctx.state==='running')schedule();}).catch(()=>{});
+ }catch(e){}
+}
+const MUSIC_MELODY=[
+ 392,440,523.25,440,392,349.23,329.63,392,
+ 440,523.25,587.33,523.25,493.88,440,392,329.63,
+ 349.23,392,440,523.25,440,392,349.23,293.66,
+ 329.63,392,440,392,349.23,329.63,293.66,261.63
+];
+const MUSIC_BASS=[130.81,146.83,110,174.61];
+function stopMusicLoop(){
+ if(musicTimer!==null){clearInterval(musicTimer);musicTimer=null;}
+}
+function musicBeat(){
+ if(!musicEnabled||document.hidden)return;
+ try{
+  const ctx=audioEngine();if(!ctx||ctx.state!=='running')return;
+  const i=musicNote++,t=ctx.currentTime+.018;
+  playTone(ctx,MUSIC_MELODY[i%MUSIC_MELODY.length],t,.32,.052,'triangle');
+  if(i%2===0)playTone(ctx,MUSIC_MELODY[i%MUSIC_MELODY.length]/2,t,.34,.012,'sine');
+  if(i%4===0)playTone(ctx,MUSIC_BASS[Math.floor(i/8)%4],t,.77,.032,'sine');
+  if(i%8===4)playTone(ctx,196,t,.33,.016,'triangle');
+ }catch(e){}
+}
+function startMusicLoop(){
+ stopMusicLoop();
+ if(!musicEnabled||document.hidden)return;
+ musicBeat();musicTimer=setInterval(musicBeat,430);
+}
+async function musicToggle(){
+ if(musicEnabled){musicEnabled=false;stopMusicLoop();updateMediaDock();sound('click');return;}
+ if(musicStarting)return;
+ const ctx=audioEngine();
+ if(!ctx){showModal('Musik tidak tersedia','Browser ini belum mendukung audio interaktif. Cobalah Google Chrome, Microsoft Edge, atau Safari terbaru.');return;}
+ musicStarting=true;updateMediaDock();
+ try{
+  await Promise.race([ctx.resume(),new Promise(resolve=>setTimeout(resolve,1600))]);
+  if(ctx.state!=='running')throw new Error('Audio masih diblokir');
+  musicEnabled=true;
+  musicNote=0;
+  startMusicLoop();
+  sound('click');
+ }catch(e){
+  musicEnabled=false;stopMusicLoop();
+  showModal('Aktifkan audio browser','Musik belum dapat diputar. Pastikan perangkat tidak dalam mode senyap, izin suara di browser aktif, lalu klik Musik ON kembali.');
+ }finally{musicStarting=false;updateMediaDock();}
+}
+function updateMediaDock(){
+ const dock=document.getElementById('mediaDock');if(!dock)return;
+ dock.hidden=page==='splash';document.body.classList.toggle('has-media-dock',!dock.hidden);
+ dock.classList.toggle('ticker-paused',tickerPaused);
+ const fx=dock.querySelector('[data-dock="effects"]'),bg=dock.querySelector('[data-dock="music"]'),pause=dock.querySelector('[data-dock="pause"]');
+ fx.setAttribute('aria-pressed',String(effectsEnabled));fx.textContent=effectsEnabled?'🔔 Efek ON':'🔕 Efek OFF';
+ bg.setAttribute('aria-pressed',String(musicEnabled));bg.setAttribute('aria-label',musicEnabled?'Jeda musik latar':'Putar musik latar');bg.textContent=musicStarting?'🎶 Memulai…':musicEnabled?'🎶 Musik ON':'🎵 Musik OFF';bg.disabled=musicStarting;
+ pause.setAttribute('aria-pressed',String(tickerPaused));pause.textContent=tickerPaused?'▶ Lanjut teks':'⏸ Jeda teks';
+}
+const mediaDock=document.getElementById('mediaDock');
+mediaDock.addEventListener('click',e=>{
+ const b=e.target.closest('button[data-dock]');if(!b)return;
+ if(b.dataset.dock==='effects'){effectsEnabled=!effectsEnabled;saveMediaPreferences();updateMediaDock();if(effectsEnabled)sound('click');}
+ if(b.dataset.dock==='music')musicToggle();
+ if(b.dataset.dock==='pause'){tickerPaused=!tickerPaused;updateMediaDock();sound('click');}
+});
+document.addEventListener('visibilitychange',()=>{if(document.hidden)stopMusicLoop();else if(musicEnabled)startMusicLoop();});
+function go(p){if(p==='game'&&!allLearned()){showModal('Tahap masih terkunci','Selesaikan dan jawab benar aktivitas pada keenam slide BELAJAR terlebih dahulu.');return;}if((p==='assessment'||p==='report')&&!gameDone()){showModal('Tahap masih terkunci','Selesaikan seluruh sepuluh tantangan BERMAIN untuk membuka BERLATIH.');return;}if(p==='report'&&!assessDone()){showModal('Laporan belum siap','Selesaikan kesepuluh soal BERLATIH agar laporan hasil belajar dapat dibuat.');return;}page=p;modal=null;work=null;workWarning='';lessonError='';render();scrollTop();sound('next');}
+function showModal(title,body){modal={title,body};render();sound('click');}
+function closeModal(){modal=null;render();sound('click');}
+function progressBar(value,total){return `<div class="progress" role="progressbar" aria-valuenow="${value}" aria-valuemin="0" aria-valuemax="${total}"><div style="width:${Math.min(100,100*value/total)}%"></div></div>`;}
+function navbar(){if(['splash','cover'].includes(page))return '';return `<div class="nav no-print"><div class="nav-inner"><div class="nav-brand"><span class="avatar-mini">💧</span><span class="brand-long">FIQIH · KELAS I / FASE A</span><span class="small muted">Thaharah</span></div><div class="nav-actions"><button class="btn outline small" data-act="menu">⌂ Menu</button></div></div></div>`;}
+function svgHero(){return `<svg class="hero-svg" viewBox="0 0 530 480" role="img" aria-label="Ilustrasi kain bersih, ember air dan tetes air yang bergerak"><defs><linearGradient id="wat" x1="0" x2=".8" y1="0" y2="1"><stop stop-color="#b5fff7"/><stop offset="1" stop-color="#55d7f1"/></linearGradient><linearGradient id="gold" x1="0" y1="0" x2="1"><stop stop-color="#fff3bd"/><stop offset="1" stop-color="#dba643"/></linearGradient></defs><circle cx="267" cy="225" r="178" fill="#ffffff1a"/><circle cx="267" cy="225" r="137" fill="#ffffff19"/><g class="wave"><ellipse cx="263" cy="405" rx="170" ry="28" fill="#013d2d55"/><rect x="124" y="235" rx="26" width="270" height="157" fill="#f8ffff"/><path d="M124 267h270v91q0 34-29 34H150q-26 0-26-34Z" fill="#d6f8e9"/><path d="M124 296c65 39 151-28 270 9" stroke="#8fd6b6" stroke-width="10" fill="none" stroke-linecap="round"/><path d="M174 237q-4-95 85-94 93 0 92 94" stroke="url(#gold)" stroke-width="17" fill="none" stroke-linecap="round"/><path d="M155 253h205" stroke="#a9cbb8" stroke-width="13" stroke-linecap="round"/><path d="M205 298h108l-7 60H214Z" fill="#fff" stroke="#92c7b5" stroke-width="4"/><path d="M229 317h60" stroke="#b3dfcc" stroke-width="8" stroke-linecap="round"/><path d="M233 337h51" stroke="#b3dfcc" stroke-width="8" stroke-linecap="round"/></g><path class="water-drop" d="M265 28C230 89 209 109 209 145a56 56 0 0 0 112 0c0-37-22-60-56-117Z" fill="url(#wat)" stroke="#e7fffa" stroke-width="5"/><path d="M248 110c-13 24-16 41-7 52" fill="none" stroke="white" stroke-opacity=".72" stroke-width="9" stroke-linecap="round"/><g class="water-drop"><path d="M135 117c-14 24-21 36-21 48a23 23 0 0 0 46 0c0-12-7-24-25-48Z" fill="#a7f1ff"/><circle cx="401" cy="178" r="19" fill="#e8ca75"/><circle cx="425" cy="214" r="10" fill="#e8ca75"/></g><path d="M420 306c40-8 60-31 59-64-35 6-54 28-59 64Z" fill="#b9eda2"/><path d="M419 309c-38-4-54-20-62-44 36-3 58 13 62 44Z" fill="#97d381"/></svg>`;}
+function cover(){return `<div class="cover-wrap page"><section class="cover hero-gradient"><div class="cover-left"><div><span class="pill white">📚 FIQIH · KELAS I / FASE A</span></div><h1 class="cover-title">Thaharah:<br><strong>Jenis Najis</strong> dan Cara Menyucikannya</h1><p class="description">Ayo belajar bersuci dengan benar, menyenangkan, dan penuh cinta!</p><div class="cover-actions"><button class="btn gold" data-act="developer">🧑‍🏫 Informasi Pengembang</button><button class="btn outline" data-act="objectives">🎯 Tujuan Pembelajaran</button><button class="btn gold start" data-act="start">MULAI BELAJAR ✨</button></div></div><div class="cover-visual">${svgHero()}</div></section></div>`;}
+function quote(v){return `<div class="quote"><div class="verse-ref">${esc(v.ref)}</div><div class="arabic" lang="ar">${esc(v.arab)}</div><p class="verse-translation"><b>Terjemahan Kemenag RI:</b> “${esc(v.trans)}”</p><div class="small muted">${esc(v.insight)}</div></div>`;}
+function modalHtml(){if(!modal)return '';let content='';if(modal.kind==='developer'){content=`<div class="center"><img class="profile-photo" src="${DEVELOPER.photo}" alt="Foto pengembang" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="profile-fallback" aria-label="Avatar inisial AA">AA</div><h2>Informasi Pengembang</h2><p><b>${esc(DEVELOPER.name)}</b></p><p>${esc(DEVELOPER.school)}</p><p>✉ <a href="mailto:${esc(DEVELOPER.email)}">${esc(DEVELOPER.email)}</a></p></div>`;}else if(modal.kind==='objectives'){content=`<h2>Tujuan Pembelajaran</h2><p>Setelah menggunakan media ini, peserta didik mampu mengenali pengertian najis secara sederhana dan menyebutkan tiga jenis najis: <b>mukhaffafah (ringan), mutawassitah (sedang), dan mughallazah (berat)</b>.</p>${quote(DB.verses[1])}<p class="small">💛 <b>Pesan Kurikulum Berbasis Cinta:</b> Belajar bersuci dengan cinta kepada Allah dan Rasul, peduli teman, menyayangi makhluk hidup, melestarikan lingkungan, dan bangga menjaga Gorontalo.</p>`;}else{content=`<h2>${esc(modal.title)}</h2><p>${esc(modal.body)}</p>`;}return `<div class="modal-backdrop" role="presentation"><div class="modal" role="dialog" aria-modal="true" aria-label="${esc(modal.title||modal.kind||'Informasi')}">${content}<button class="btn full" data-act="close-modal">Kembali ke ${page==='cover'?'Cover':'Halaman'}</button></div></div>`;}
+function identity(){return `<main class="page"><div class="panel pad form-panel"><span class="pill">👋 Selamat Datang</span><h2 style="margin-top:13px">Isi Identitas Sebelum Belajar</h2><p class="muted">Nama dan kelas akan dicantumkan pada laporan hasil belajar.</p><form id="identityForm" novalidate><div class="field"><label for="studentName">Nama Lengkap Siswa</label><input id="studentName" maxlength="90" autocomplete="name" placeholder="Contoh: Aisyah Putri" value="${esc(state.name)}" required></div><div class="field"><label for="studentGrade">Kelas</label><input id="studentGrade" maxlength="35" placeholder="Contoh: I A" value="${esc(state.grade)}" required></div><div class="error" id="identityError" role="alert">${esc(identityError)}</div><div class="button-row"><button type="button" class="btn outline" data-act="cover">← Cover</button><button type="submit" class="btn" data-act="to-guide">Lanjut ke Panduan →</button></div></form></div></main>`;}
+const guides=[
+ {icon:'📖',title:'Baca, Lihat, dan Dengarkan',text:'Amati tiap slide. Bacalah bersama guru atau teman bila masih mengeja. Kenali gambar, konteks Gorontalo, ayat Al-Qur’an, dan cara bersuci yang benar.'},
+ {icon:'🎮',title:'Jawab Tantangan dengan Sentuhan',text:'Jawab aktivitas setiap slide. Untuk menjodohkan dan mengelompokkan, ketuk kartu lalu ketuk tujuan. Di komputer kamu juga dapat menarik kartu dengan mouse.'},
+ {icon:'🏅',title:'Selesaikan Tahapan Berurutan',text:'Tuntaskan 6 slide BELAJAR untuk membuka 10 tantangan BERMAIN. Sesudah bermain, ikuti 10 soal BERLATIH dan cetak laporan nilaimu.'}
+];
+function guide(){let g=guides[guideIndex];return `<main class="page"><div class="panel pad" style="max-width:780px;margin:auto"><div class="welcome"><div class="eyebrow">Halo, ${esc(state.name)}! 👋</div><h2 style="margin:8px 0 5px">Selamat datang di pembelajaran Thaharah!</h2><p style="margin:0">Panduan ${guideIndex+1} dari ${guides.length}</p></div><div style="padding:24px 0 5px"><div class="guide-visual">${g.icon}</div><h2>${esc(g.title)}</h2><p style="font-size:1.08rem;line-height:1.8">${esc(g.text)}</p></div><div class="dots">${guides.map((_,i)=>`<span class="dot ${i===guideIndex?'active':''}"></span>`).join('')}</div><div class="button-row"><button class="btn outline" data-act="guide-back" ${guideIndex===0?'disabled':''}>← Kembali</button><button class="btn" data-act="guide-next">${guideIndex===2?'Masuk ke Menu Utama →':'Selanjutnya →'}</button></div></div></main>`;}
+function menu(){const lc=state.learned.filter(Boolean).length,gc=state.gameAnswers.length,ac=state.assessAnswers.length;const cards=[{title:'BELAJAR',icon:'📚',desc:'6 slide materi lengkap, ayat Al-Qur’an, nilai cinta, dan aktivitas pemantik.',enabled:true,stat:`${lc}/6 slide selesai`,act:'learn'},{title:'BERMAIN',icon:'🎲',desc:'10 tantangan literasi–numerasi: menjodohkan, urutkan, seret kartu, dan pilihan ganda.',enabled:allLearned(),stat:`${gc}/10 tantangan selesai`,act:'game'},{title:'BERLATIH',icon:'📝',desc:'10 soal bertingkat dengan bobot total 100 poin dan laporan hasil belajar.',enabled:gameDone(),stat:`${ac}/10 soal selesai`,act:'assessment'}];return `<main class="page"><section class="menu-head"><div><div class="eyebrow" style="color:#bbf4d7">MENU UTAMA · SELAMAT BELAJAR</div><h2 style="margin:8px 0">Halo, ${esc(state.name)}! 🌟</h2><p class="muted" style="margin:0">Kelas ${esc(state.grade)} · MIM Unggulan Kota Gorontalo</p></div><span class="pill white">💚 Belajar dengan cinta</span></section><div class="grid3">${cards.map((c,i)=>`<button class="card-button ${c.enabled?'':'is-locked'}" data-act="${c.act}"><span class="emblem">${c.icon}</span><span class="pill ${c.enabled?'':'locked'}">${c.enabled?'🔓 TERBUKA':'🔒 TERKUNCI'}</span><h2 style="margin:0">${c.title}</h2><p>${c.desc}</p><div class="card-bottom"><span class="small" style="font-weight:850">${c.stat}</span><span>→</span></div>${progressBar([lc,gc,ac][i],[6,10,10][i])}</button>`).join('')}</div><div class="menu-notice"><b>🧭 Urutan belajar:</b> BELAJAR → BERMAIN → BERLATIH. Selesaikan kegiatan pada tiap tahap untuk membuka tahap berikutnya. ${assessDone()?'<button class="btn small" style="margin-left:10px" data-act="report">📄 Lihat Laporan</button>':''}<p class="small muted" style="margin:8px 0 0">Belajar fikih dengan ramah kepada teman, semua makhluk, serta lingkungan Gorontalo. <button class="btn small outline" style="margin-left:5px" data-act="references">📚 Referensi</button></p></div><div class="footer">Media pembelajaran offline · ${esc(DEVELOPER.name)} · ${esc(DEVELOPER.school)}</div></main>`;}
+function lesson(){const l=DB.lessons[lessonIndex],done=!!state.learned[lessonIndex],n=state.learned.filter(Boolean).length;return `<main class="page"><div class="crumb"><button class="btn secondary small" data-act="menu">⌂ Menu Utama</button> › BELAJAR › Slide ${lessonIndex+1} dari 6</div><div class="slide-head"><div class="title-area"><span class="pill">${l.icon} SLIDE ${lessonIndex+1} / 6</span><h2>${esc(l.title)}</h2><p class="muted">${esc(l.lead)}</p></div><div style="width:min(200px,100%);align-self:center"><span class="small muted">Progress ${n}/6 slide</span>${progressBar(n,6)}</div></div><div class="lesson-layout"><section class="panel pad lesson-body"><span class="eyebrow">Materi Inti</span>${l.paragraphs.map(p=>`<p>${esc(p)}</p>`).join('')}<div class="lesson-activity" id="lessonActivity"><div class="eyebrow">✏️ Aktivitas Pemantik Wajib</div><h3 style="margin:12px 0">${esc(l.question)}</h3><div class="option-list">${l.options.map((o,i)=>`<button class="option" data-act="lesson-answer" data-idx="${i}" ${done?'disabled':''}><span class="option-letter">${'ABC'[i]}</span>${esc(o)}</button>`).join('')}</div>${done?`<div class="feedback success" role="status">✅ Benar! ${esc(l.explain)} Slide ini selesai.</div>`:lessonError?`<div class="feedback fail" role="status">💡 ${esc(lessonError)}</div>`:''}</div><div class="button-row"><button class="btn outline" data-act="lesson-back" ${lessonIndex===0?'disabled':''}>← Slide Sebelumnya</button>${done?`<button class="btn" data-act="lesson-next">${lessonIndex===5?'✓ Selesai Belajar · Ke Menu':'Slide Selanjutnya →'}</button>`:`<button class="btn" disabled>Jawab Aktivitas untuk Lanjut 🔒</button>`}</div></section><aside class="lesson-side"><div class="local-box"><h3>📍 Konteks Gorontalo</h3><p style="margin:0;line-height:1.7">${esc(l.local)}</p></div><div class="love-box"><h3>💚 Kurikulum Berbasis Cinta</h3><p style="margin:0;line-height:1.7">${esc(l.love)}</p></div>${quote(DB.verses[l.verse])}</aside></div></main>`;}
+function ensureWork(stage,idx,item){const key=stage+':'+idx;if(work?.key===key)return work;let w={key,selected:null,choices:[],assign:{},selectedLeft:null,selectedItem:null,selectedPos:null};if(item.kind==='ordering'){w.order=item.pieces.map((_,i)=>i);w.order=item.pieces.length===4?[2,0,3,1]:w.order.slice().reverse();}work=w;workWarning='';return w;}
+function interactiveHtml(q,stage,idx){const answered=stage==='game'?state.gameAnswers[idx]:state.assessAnswers[idx];if(answered)return `<div class="feedback ${answered.correct?'success':'fail'}">${answered.correct?'✅ Tepat!':'💡 Belum tepat.'} ${esc(q.explain)}<div style="margin-top:8px"><b>Kunci:</b> ${esc(answerText(q))}</div></div>`;const w=ensureWork(stage,idx,q),scope=`data-stage="${stage}"`;let area='';
+ if(q.kind==='matching'){const rev=[1,2,0];area=`<p class="order-hint">Ketuk kartu di kolom kiri, kemudian ketuk pasangannya di kanan. Mouse juga dapat dipakai untuk menarik kartu.</p><div class="match-cols"><div class="match-col"><h4>Istilah / Jenis</h4>${q.pairs.map((p,i)=>`<button draggable="true" data-drag="match:${i}" data-act="match-left" data-idx="${i}" class="tile ${w.selectedLeft===i?'selected':''} ${w.assign[i]!==undefined?'assigned':''}"><span class="num">${i+1}.</span>${esc(p.left)} ${w.assign[i]!==undefined?'✓':''}</button>`).join('')}</div><div class="match-col"><h4>Arti / Cara</h4>${rev.map(i=>`<button data-drop="match:${i}" data-act="match-right" data-idx="${i}" class="tile drop ${Object.values(w.assign).includes(i)?'assigned':''}">${esc(q.pairs[i].right)}</button>`).join('')}</div></div>`;}
+ else if(q.kind==='ordering'){area=`<p class="order-hint">Ketuk dua langkah untuk menukar posisi, atau tarik langkah dengan mouse. Urutan teratas adalah langkah pertama.</p><div class="order-list">${w.order.map((pieceIndex,i)=>`<div class="order-row"><span class="order-n">${i+1}.</span><button class="tile order-btn ${w.selectedPos===i?'selected':''}" draggable="true" data-drag="order:${i}" data-drop="order:${i}" data-act="order-select" data-idx="${i}">☰ &nbsp; ${esc(q.pieces[pieceIndex])}</button></div>`).join('')}</div>`;}
+ else if(q.kind==='drag'){area=`<p class="order-hint">Ketuk kartu, kemudian ketuk wadah. Mouse dapat menarik kartu langsung ke wadah.</p><div class="chip-bank">${q.items.map((it,i)=>w.assign[i]!==undefined?'':`<button class="chip ${w.selectedItem===i?'selected':''}" draggable="true" data-drag="item:${i}" data-act="drag-select" data-idx="${i}">${esc(it.label)}</button>`).join('')}</div><div class="bucket-group">${q.groups.map((group,idxg)=>`<button class="bucket" data-act="drag-target" data-idx="${idxg}" data-drop="bucket:${idxg}"><b>${esc(group)}</b>${q.items.map((it,i)=>w.assign[i]===group?`<span class="assigned-chip" title="Ketuk untuk mengubah pilihan">${esc(it.label)} <span style="color:#0d7658">✓</span></span>`:'').join('')}</button>`).join('')}</div><p class="small muted">Untuk memindah kartu yang sudah ditempatkan, ketuk ulang kelompok kartu melalui tombol "Ulangi pengelompokan".</p><button class="btn small outline" data-act="drag-reset">↺ Ulangi pengelompokan</button>`;}
+ else if(q.kind==='single'||stage==='assessment'){area=`<div class="option-list">${q.options.map((o,i)=>`<button class="option ${w.selected===i?'selected':''}" data-act="select-one" data-idx="${i}"><span class="option-letter">${'ABC'[i]}</span>${esc(o)}</button>`).join('')}</div>`;}
+ else if(q.kind==='multi'){area=`<p class="order-hint">Boleh memilih lebih dari satu jawaban. Ketuk lagi untuk membatalkan pilihan.</p><div class="option-list">${q.options.map((o,i)=>`<button class="option ${w.choices.includes(i)?'selected':''}" aria-pressed="${w.choices.includes(i)}" data-act="select-multi" data-idx="${i}"><span class="option-letter">${w.choices.includes(i)?'✓':String.fromCharCode(65+i)}</span>${esc(o)}</button>`).join('')}</div>`;}
+ return `${area}${workWarning?`<div class="feedback info" role="status">${esc(workWarning)}</div>`:''}<div class="button-row"><button class="btn" data-act="submit-answer">Periksa Jawaban ✓</button></div>`;}
+function answerText(q){switch(q.kind){case'matching':return q.pairs.map(p=>p.left+' → '+p.right).join('; ');case'ordering':return q.pieces.map((x,i)=>(i+1)+'. '+x).join(' → ');case'drag':return q.items.map(x=>x.label+' → '+x.group).join('; ');case'multi':return q.correct.map(i=>q.options[i]).join('; ');default:return q.options[q.correct];}}
+function stageView(stage){const isGame=stage==='game',list=isGame?DB.games:DB.assessment,answers=isGame?state.gameAnswers:state.assessAnswers,idx=isGame?gameIndex:assessIndex;
+ if(idx===10)return stageSummary(stage);
+ const q=list[idx],responded=!!answers[idx],points=isGame?10:q.points;
+ return `<main class="page"><div class="crumb"><button class="btn secondary small" data-act="menu">⌂ Menu Utama</button> › ${isGame?'BERMAIN':'BERLATIH'} › Nomor ${idx+1}/10</div><div class="slide-head"><div class="title-area"><div style="display:flex;gap:8px;flex-wrap:wrap"><span class="pill">${isGame?'🎲 Tantangan':'📝 Asesmen'} ${idx+1} dari 10</span>${isGame?'<span class="pill gold">10 poin permainan</span>':`<span class="level-badge level${q.level}">Level ${q.level} · ${q.level===1?'Dasar':q.level===2?'Sedang':'HOTS'} · ${points} poin</span>`}</div><h2>${esc(q.title)}</h2><p class="muted">${isGame?'Latih literasi, numerasi, dan kolaborasi dengan menyimak stimulus terlebih dahulu.':'Baca stimulus dengan saksama, lalu tentukan jawaban paling tepat.'}</p></div><div style="width:min(200px,100%);align-self:center"><span class="small muted">Progress ${answers.length}/10</span>${progressBar(answers.length,10)}</div></div><div class="panel pad"><div class="eyebrow">📖 Stimulus Literasi dan Numerasi</div><p class="question-count">Bacaan ${q.stimulus.trim().split(/\s+/).length} kata</p><div class="stimulus">${esc(q.stimulus)}</div><div class="prompt-box"><div class="eyebrow">${isGame?'🎯 Tantangan Interaktif':'🔎 Soal Asesmen'}</div><h3 style="margin-top:9px">${esc(isGame?q.prompt:q.question)}</h3>${interactiveHtml(isGame?q:{...q,kind:'single'},stage,idx)}</div>${responded?`<div class="button-row"><button class="btn" data-act="stage-next">${idx===9?'Selesaikan dan Lihat Rekap →':'Soal Berikutnya →'}</button></div>`:''}<div class="rule"></div><div class="small muted">${isGame?'Kelima jenis permainan muncul dua kali dalam sepuluh tantangan.':'Skor asesmen: No. 1–3 × 8 poin; No. 4–7 × 10 poin; No. 8–10 × 12 poin.'} Kamu dapat berdiskusi pada tahap bermain; saat berlatih, jawablah sendiri dengan jujur.</div></div></main>`;
+}
+function stageSummary(stage){if(stage==='game'){const c=gameCorrect();return `<main class="page"><div class="panel pad" style="max-width:760px;margin:auto"><span class="pill gold">🎉 BERMAIN SELESAI!</span><h2 style="margin-top:15px">Kamu berhasil menyelesaikan 10 tantangan!</h2><p>Hebat, ${esc(state.name)}! Semua tantangan telah dicoba. Sekarang menu <b>BERLATIH</b> terbuka untukmu.</p><div class="metric-cards"><div class="metric"><div class="val">${c*10}/100</div><div class="lab">Skor permainan</div></div><div class="metric"><div class="val">${c}/10</div><div class="lab">Jawaban tepat</div></div><div class="metric"><div class="val">${c*10}%</div><div class="lab">Akurasi</div></div></div><div class="feedback info">Kesalahan adalah kesempatan belajar. Bacalah kembali materi tentang tiga jenis najis bila masih perlu bantuan.</div><div class="button-row"><button class="btn outline" data-act="menu">⌂ Menu Utama</button><button class="btn" data-act="assessment">Mulai BERLATIH →</button></div></div></main>`;}
+ return `<main class="page"><div class="panel pad" style="max-width:760px;margin:auto"><div class="eyebrow">🏁 Semua soal selesai</div><h2>Kerja bagus, ${esc(state.name)}!</h2><p>Sepuluh soal asesmen telah dikerjakan. Nilai akhir dihitung dari bobot setiap level dengan jumlah maksimal 100 poin.</p><div class="summary-banner">Nilai akhir asesmen<br><strong>${testScore()} / 100</strong></div><div class="button-row"><button class="btn" data-act="report">📄 Buka Laporan Hasil Belajar</button></div></div></main>`;}
+function predicate(n){return n>=90?'Sangat Baik':n>=75?'Baik':n>=60?'Cukup':'Perlu Bimbingan';}
+function lvlStats(lvl){let total=0,max=0,correct=0,questionCount=0;DB.assessment.forEach((q,i)=>{if(q.level===lvl){questionCount++;max+=q.points;if(state.assessAnswers[i]?.correct){correct++;total+=q.points;}}});return {total,max,correct,questionCount};}
+function recommendations(score){if(score>=90)return 'Pertahankan kebiasaan bersuci dan jadilah pendamping yang sabar bagi teman saat latihan.';if(score>=75)return 'Tinjau lagi jenis najis yang masih tertukar, lalu ulangi peragaan kartu bersama guru.';if(score>=60)return 'Ulangi materi tiga jenis najis, latihan langkah bersuci, dan hitungan tujuh basuhan menggunakan kartu.';return 'Perlu pendampingan guru/orang tua melalui bacaan pendek, gambar, demonstrasi aman, dan latihan ulang bertahap.';}
+function report(){const score=testScore(),c=gameCorrect(),date=state.completedAt?new Date(state.completedAt):new Date(),d=new Intl.DateTimeFormat('id-ID',{day:'numeric',month:'long',year:'numeric'}).format(date);const ls=[lvlStats(1),lvlStats(2),lvlStats(3)];return `<main class="page"><div class="button-row no-print report-actions" style="justify-content:space-between;margin:0 0 17px"><button class="btn outline" data-act="menu">⌂ Kembali ke Menu</button><button class="btn" id="pdfButton" data-act="pdf">📥 Unduh / Cetak Laporan PDF</button></div><article class="panel pad" id="printArea"><div class="report-top"><div class="report-logo">💧</div><div><div class="eyebrow">LAPORAN HASIL BELAJAR · MEDIA PEMBELAJARAN INTERAKTIF</div><h2 class="report-title" style="text-align:left;margin:7px 0">FIQIH – THAHARAH</h2><div class="small">${esc(DEVELOPER.school)} · Kelas I / Fase A</div><div class="small muted">Pengembang: ${esc(DEVELOPER.name)} · ${esc(DEVELOPER.email)}</div></div></div><h3 style="margin-top:22px">A. Identitas Peserta Didik</h3><table class="report-table"><tr><th style="width:30%">Nama Lengkap</th><td>${esc(state.name)}</td></tr><tr><th>Kelas</th><td>${esc(state.grade)}</td></tr><tr><th>Tanggal Pengerjaan</th><td>${esc(d)}</td></tr><tr><th>Topik</th><td>${esc(PAGE_TITLE)}</td></tr></table><h3>B. Rekapitulasi Bermain</h3><div class="metric-cards"><div class="metric"><div class="val">${c*10}/100</div><div class="lab">Skor Bermain</div></div><div class="metric"><div class="val">${c*10}%</div><div class="lab">Akurasi Jawaban</div></div><div class="metric"><div class="val">${c}/10</div><div class="lab">Tantangan Tepat</div></div></div><h3>C. Hasil Asesmen Berlatih</h3><div class="summary-banner"><div class="small">Nilai akhir dari 100 poin</div><strong>${score}</strong><div>Predikat: <b>${predicate(score)}</b></div></div><table class="report-table"><thead><tr><th>Level</th><th>Jenis Kompetensi</th><th>Penguasaan</th><th class="right">Poin</th></tr></thead><tbody>${ls.map((s,i)=>`<tr><td>${i+1}</td><td>${['Dasar / Pemahaman','Sedang / Aplikasi','Tinggi / HOTS'][i]}</td><td>${s.correct}/${s.questionCount} benar (${Math.round(100*s.correct/s.questionCount)}%)</td><td class="right">${s.total}/${s.max}</td></tr>`).join('')}</tbody></table><h3>D. Rincian Jawaban Berlatih</h3><table class="report-table"><thead><tr><th>No.</th><th>Materi</th><th>Level</th><th>Hasil</th><th class="right">Poin</th></tr></thead><tbody>${DB.assessment.map((q,i)=>`<tr><td>${i+1}</td><td>${esc(q.title)}</td><td>${q.level}</td><td>${state.assessAnswers[i]?.correct?'Benar':'Belum tepat'}</td><td class="right">${state.assessAnswers[i]?.correct?q.points:0}/${q.points}</td></tr>`).join('')}</tbody></table><h3>E. Catatan Kurikulum Berbasis Cinta</h3><p style="line-height:1.7">Peserta didik dibimbing untuk mencintai Allah dan Rasul melalui kesucian ibadah, menghormati teman, menyayangi makhluk hidup, menggunakan air seperlunya, dan menjaga lingkungan serta tanah air, khususnya Gorontalo.</p><h3>F. Rekomendasi Guru</h3><div class="small-stat">${recommendations(score)}</div><div style="margin-top:25px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap"><div class="small muted">Laporan otomatis ini merupakan umpan balik pembelajaran; tetap memerlukan pengamatan guru pada praktik bersuci.</div><div class="small" style="text-align:right">Gorontalo, ${esc(d)}<br>Guru / Pengembang<br><br><b>${esc(DEVELOPER.name)}</b></div></div></article><div class="no-print" style="margin-top:16px"><button class="btn outline small" data-act="reset-request">↻ Mulai Ulang untuk Siswa Baru</button><p class="read-aloud">Laporan dapat dicetak sebagai PDF tanpa internet melalui opsi “Simpan sebagai PDF” pada jendela cetak. Saat online, tombol mencoba mengunduh PDF otomatis.</p></div></main>`;}
+function references(){return `<main class="page"><div class="panel pad" style="max-width:870px;margin:auto"><span class="pill">📚 REFERENSI PEMBELAJARAN</span><h2 style="margin-top:15px">Sumber dan Catatan Penyusunan</h2><ol class="references"><li><b>Al-Qur’an Kemenag RI:</b> QS. Al-Muddassir [74]: 4 (<a href="https://bimasislam.kemenag.go.id/al-quran/74" target="_blank" rel="noopener">Bimas Islam Kemenag</a>), QS. Al-Baqarah [2]: 222 (<a href="https://bimasislam.kemenag.go.id/al-quran/2" target="_blank" rel="noopener">Bimas Islam Kemenag</a>).</li><li><b>Fiqih MI Kelas I:</b> Gunakan buku pelajaran Fiqih kelas I dan pedoman madrasah yang berlaku sebagai pembanding saat mengajar. Ketentuan najis berat pada MPI ini mengikuti pendekatan fikih Syafi’i yang lazim diajarkan pada materi thaharah.</li><li><b>Kemenag RI:</b> Rujukan perangkat pembelajaran dan pendekatan Kurikulum Berbasis Cinta perlu disesuaikan guru dengan panduan resmi terkini dari Kementerian Agama (<a href="https://kemenag.go.id/" target="_blank" rel="noopener">kemenag.go.id</a>).</li><li><b>Pengembangan media:</b> Ilustrasi SVG, kode HTML/CSS/JavaScript, dan teks latihan disusun secara digital dengan bantuan AI dan dapat ditelaah serta disesuaikan guru sebelum dipakai.</li></ol><div class="feedback info"><b>Catatan penggunaan:</b> Media ini tidak menggantikan penjelasan guru atau buku Fiqih resmi. Semua kegiatan praktik menggunakan alat tiruan aman, bukan najis asli.</div><div class="button-row"><button class="btn" data-act="menu">← Menu Utama</button></div></div></main>`;}
+function render(){let inner='';switch(page){case'splash':inner=`<div class="splash"><div class="splash-card"><span class="splash-droplet">💧</span><div class="splash-title">Thaharah</div><p>Belajar Bersuci dengan Cinta</p><div class="splash-line"></div><div class="small">FIQIH · KELAS I / FASE A</div></div></div>`;break;case'cover':inner=cover();break;case'identity':inner=identity();break;case'guide':inner=guide();break;case'menu':inner=menu();break;case'learn':inner=lesson();break;case'game':inner=stageView('game');break;case'assessment':inner=stageView('assessment');break;case'report':inner=report();break;case'references':inner=references();break;}app.innerHTML=navbar()+inner+modalHtml();updateMediaDock();}
+function doLessonAnswer(idx){const l=DB.lessons[lessonIndex];if(state.learned[lessonIndex])return;if(idx===l.answer){state.learned[lessonIndex]=true;record();lessonError='';sound('good');if(allLearned())sound('complete');}else{lessonError='Belum tepat. Baca kembali materi, lalu pilih jawaban lain. Kamu pasti bisa!';sound('bad');}render();}
+function gameCheck(q,w){if(q.kind==='matching'){if(Object.keys(w.assign).length!==q.pairs.length)return null;return q.pairs.every((p,i)=>Number(w.assign[i])===i);}if(q.kind==='ordering')return w.order.every((v,i)=>v===i);if(q.kind==='drag'){if(Object.keys(w.assign).length!==q.items.length)return null;return q.items.every((x,i)=>w.assign[i]===x.group);}if(q.kind==='multi'){if(w.choices.length===0)return null;return w.choices.length===q.correct.length&&w.choices.every(x=>q.correct.includes(x));}if(w.selected===null)return null;return w.selected===q.correct;}
+function submitAnswer(){const isGame=page==='game',stage=isGame?'game':'assessment',idx=isGame?gameIndex:assessIndex,list=isGame?DB.games:DB.assessment,q=list[idx],answers=isGame?state.gameAnswers:state.assessAnswers;if(idx>=10||answers[idx])return;const w=ensureWork(stage,idx,isGame?q:{...q,kind:'single'}),correct=gameCheck(isGame?q:{...q,kind:'single'},w);if(correct===null){workWarning='Lengkapi semua pasangan, kartu, urutan, atau pilihan sebelum memeriksa jawaban.';render();sound('bad');return;}answers.push({correct,at:new Date().toISOString()});record();workWarning='';sound(correct?'good':'bad');if(answers.length===10){sound('complete');if(!isGame&&!state.completedAt){state.completedAt=new Date().toISOString();record();sendDataToGAS();}}render();}
+function nextStage(){if(page==='game'){if(!state.gameAnswers[gameIndex])return;gameIndex=Math.min(10,gameIndex+1);}else{if(!state.assessAnswers[assessIndex])return;assessIndex=Math.min(10,assessIndex+1);}work=null;workWarning='';render();scrollTop();sound('next');}
+function handleAct(action,button){let idx=Number(button.dataset.idx);
+ switch(action){
+ case'developer':modal={kind:'developer'};render();sound('click');break;
+ case'objectives':modal={kind:'objectives'};render();sound('click');break;
+ case'close-modal':closeModal();break;
+ case'cover':go('cover');break;
+ case'start':go('identity');break;
+ case'to-guide':submitIdentity();break;
+ case'menu':if(!state.name||!state.grade)go('identity');else go('menu');break;
+ case'guide-back':guideIndex=Math.max(0,guideIndex-1);render();sound('click');break;
+ case'guide-next':if(guideIndex<2){guideIndex++;render();sound('next');}else go('menu');break;
+ case'learn':lessonIndex=state.learned.findIndex(x=>!x);if(lessonIndex<0)lessonIndex=5;go('learn');break;
+ case'game':gameIndex=state.gameAnswers.length;go('game');break;
+ case'assessment':assessIndex=state.assessAnswers.length;go('assessment');break;
+ case'report':go('report');break;
+ case'references':go('references');break;
+ case'lesson-answer':doLessonAnswer(idx);break;
+ case'lesson-back':if(lessonIndex>0){lessonIndex--;lessonError='';render();scrollTop();sound('next');}break;
+ case'lesson-next':if(!state.learned[lessonIndex])return;if(lessonIndex===5){go('menu');}else{lessonIndex++;lessonError='';render();scrollTop();sound('next');}break;
+ case'select-one':work.selected=idx;workWarning='';render();sound('click');break;
+ case'select-multi':work.choices=work.choices.includes(idx)?work.choices.filter(x=>x!==idx):[...work.choices,idx];workWarning='';render();sound('click');break;
+ case'match-left':work.selectedLeft=idx;render();sound('click');break;
+ case'match-right':if(work.selectedLeft!==null){for(const k of Object.keys(work.assign))if(work.assign[k]===idx)delete work.assign[k];work.assign[work.selectedLeft]=idx;work.selectedLeft=null;workWarning='';render();sound('click');}else{workWarning='Ketuk kartu di kolom kiri terlebih dahulu.';render();}break;
+ case'order-select':if(work.selectedPos===null){work.selectedPos=idx;}else if(work.selectedPos===idx){work.selectedPos=null;}else{[work.order[work.selectedPos],work.order[idx]]=[work.order[idx],work.order[work.selectedPos]];work.selectedPos=null;workWarning='';}render();sound('click');break;
+ case'drag-select':work.selectedItem=idx;render();sound('click');break;
+ case'drag-target':if(work.selectedItem!==null){const q=DB.games[gameIndex];work.assign[work.selectedItem]=q.groups[idx];work.selectedItem=null;workWarning='';render();sound('click');}else{workWarning='Ketuk satu kartu di atas, lalu pilih wadah.';render();}break;
+ case'drag-reset':work.assign={};work.selectedItem=null;workWarning='';render();sound('click');break;
+ case'submit-answer':submitAnswer();break;
+ case'stage-next':nextStage();break;
+ case'pdf':exportPDF();break;
+ case'music':musicToggle();break;
+ case'reset-request':showModal('Mulai dari awal?','Untuk menghapus kemajuan dan mengganti identitas siswa, klik tombol “Hapus dan Mulai Ulang” di bawah.');modal.confirmReset=true;render();break;
+ case'confirm-reset':state=defaults();record();guideIndex=0;lessonIndex=0;gameIndex=0;assessIndex=0;work=null;modal=null;go('cover');break;
+ }
+}
+app.addEventListener('click',e=>{const b=e.target.closest('[data-act]');if(b&&!b.disabled){if(b.dataset.act==='to-guide')e.preventDefault();if(['game','assessment'].includes(page)&&!['stage-next','submit-answer','menu','music','close-modal','report','assessment','game'].includes(b.dataset.act)){const q=page==='game'?DB.games[gameIndex]:DB.assessment[assessIndex];if(q)ensureWork(page,page==='game'?gameIndex:assessIndex,page==='game'?q:{...q,kind:'single'});}handleAct(b.dataset.act,b);}});
+function submitIdentity(){
+ const nameInput=document.getElementById('studentName'),gradeInput=document.getElementById('studentGrade');
+ if(!nameInput||!gradeInput)return;
+ const name=nameInput.value.trim().replace(/\s+/g,' '),grade=gradeInput.value.trim();
+ const error=document.getElementById('identityError');
+ const fail=(message,field)=>{
+  identityError=message;
+  if(error)error.textContent=message; 
+  field.setAttribute('aria-invalid','true');field.focus();sound('bad');
+ };
+ if(name.length<2){fail('Isi nama siswa minimal 2 karakter sebelum lanjut ke panduan.',nameInput);return;}
+ if(grade.length<1){fail('Isi kelas siswa terlebih dahulu sebelum lanjut ke panduan.',gradeInput);return;}
+ if(state.name!==name||state.grade!==grade){state=defaults();}
+ state.name=name;state.grade=grade;
+ identityError='';record();guideIndex=0;go('guide');
+}
+app.addEventListener('submit',e=>{
+ if(e.target.id!=='identityForm')return;
+ e.preventDefault();submitIdentity();
+});
+app.addEventListener('input',e=>{
+ if(!e.target.matches('#studentName,#studentGrade'))return;
+ const error=document.getElementById('identityError');if(error)error.textContent='';
+ e.target.removeAttribute('aria-invalid');identityError='';
+});
+app.addEventListener('dragstart',e=>{const item=e.target.closest('[data-drag]');if(!item)return;roleDrag=item.dataset.drag;e.dataTransfer.effectAllowed='move';e.dataTransfer.setData('text/plain',roleDrag);});
+app.addEventListener('dragover',e=>{if(e.target.closest('[data-drop]')){e.preventDefault();e.dataTransfer.dropEffect='move';}});
+app.addEventListener('drop',e=>{const target=e.target.closest('[data-drop]');if(!target)return;e.preventDefault();const src=e.dataTransfer.getData('text/plain')||roleDrag,dst=target.dataset.drop;if(!src)return;if(page!=='game'||state.gameAnswers[gameIndex])return;const q=DB.games[gameIndex];ensureWork('game',gameIndex,q);if(src.startsWith('match:')&&dst.startsWith('match:')){let l=+src.split(':')[1],r=+dst.split(':')[1];for(const k of Object.keys(work.assign))if(work.assign[k]===r)delete work.assign[k];work.assign[l]=r;work.selectedLeft=null;}else if(src.startsWith('order:')&&dst.startsWith('order:')){let l=+src.split(':')[1],r=+dst.split(':')[1];[work.order[l],work.order[r]]=[work.order[r],work.order[l]];work.selectedPos=null;}else if(src.startsWith('item:')&&dst.startsWith('bucket:')){work.assign[+src.split(':')[1]]=q.groups[+dst.split(':')[1]];work.selectedItem=null;}else return;roleDrag=null;workWarning='';render();sound('click');});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal){closeModal();}});
+async function exportPDF(){const b=document.getElementById('pdfButton');if(b){b.disabled=true;b.textContent='Menyiapkan dokumen…';}const fallback=()=>{if(b){b.disabled=false;b.textContent='📥 Unduh / Cetak Laporan PDF';}window.print();};if(typeof window.html2pdf!=='function'){
+ try{await new Promise((resolve,reject)=>{const scr=document.createElement('script');scr.src='https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js';scr.onload=resolve;scr.onerror=reject;document.head.appendChild(scr);setTimeout(()=>{if(typeof window.html2pdf!=='function')reject(new Error('Akses offline'));},3200);});}catch(e){fallback();return;}}
+ try{if(typeof window.html2pdf!=='function'){fallback();return;}const fileName='Laporan_Fiqih_'+(state.name.replace(/[^a-z0-9]/gi,'_').slice(0,45)||'Siswa')+'.pdf';await window.html2pdf().set({margin:[10,10,10,10],filename:fileName,image:{type:'jpeg',quality:.96},html2canvas:{scale:1.65,useCORS:true,backgroundColor:'#ffffff'},jsPDF:{unit:'mm',format:'a4',orientation:'portrait'},pagebreak:{mode:['avoid-all','css','legacy']}}).from(document.getElementById('printArea')).save();}catch(e){fallback();return;}if(b){b.disabled=false;b.textContent='📥 Unduh / Cetak Laporan PDF';}}
+const originalModalHtml=modalHtml;
+modalHtml=function(){const s=originalModalHtml();if(!modal?.confirmReset)return s;return s.replace(`<button class="btn full" data-act="close-modal">`,`<div class="button-row"><button class="btn danger" data-act="confirm-reset">Hapus dan Mulai Ulang</button></div><button class="btn full" data-act="close-modal">`);};
+render();setTimeout(()=>{if(page==='splash')go('cover');},1750);
+</script>
+</body>
+</html>
